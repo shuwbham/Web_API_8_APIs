@@ -1,0 +1,1373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ehrmsupLocalModelStoreContainer" CdmEntityContainer="ehrmsupLocalEntities">
+    <EntitySetMapping Name="EmpLeaveHistories">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.EmpLeaveHistory">
+        <MappingFragment StoreEntitySet="EmpLeaveHistory">
+          <ScalarProperty Name="EmpLeaveHistID" ColumnName="EmpLeaveHistID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="FinancialYear" ColumnName="FinancialYear" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="LeaveRefID" ColumnName="LeaveRefID" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="StartDayHalf" ColumnName="StartDayHalf" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="EndDayHalf" ColumnName="EndDayHalf" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AppliedOn" ColumnName="AppliedOn" />
+          <ScalarProperty Name="AddressDuringLeave" ColumnName="AddressDuringLeave" />
+          <ScalarProperty Name="VerifiedBy" ColumnName="VerifiedBy" />
+          <ScalarProperty Name="VerifiedOn" ColumnName="VerifiedOn" />
+          <ScalarProperty Name="LeaveStatusID" ColumnName="LeaveStatusID" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="TotalDays" ColumnName="TotalDays" />
+          <ScalarProperty Name="ReportingOfficerID" ColumnName="ReportingOfficerID" />
+          <ScalarProperty Name="CommentsByReportingOfficer" ColumnName="CommentsByReportingOfficer" />
+          <ScalarProperty Name="ltcavail" ColumnName="ltcavail" />
+          <ScalarProperty Name="ltcYear" ColumnName="ltcYear" />
+          <ScalarProperty Name="StationLeave" ColumnName="StationLeave" />
+          <ScalarProperty Name="DaysSuffixOrPrefix" ColumnName="DaysSuffixOrPrefix" />
+          <ScalarProperty Name="LeaveAttachment" ColumnName="LeaveAttachment" />
+          <ScalarProperty Name="AttachmentExt" ColumnName="AttachmentExt" />
+          <ScalarProperty Name="LeaveExtension" ColumnName="LeaveExtension" />
+          <ScalarProperty Name="ExtendedLeaveHistoryID" ColumnName="ExtendedLeaveHistoryID" />
+          <ScalarProperty Name="LeaveExtensionDate" ColumnName="LeaveExtensionDate" />
+          <ScalarProperty Name="CancelAfterApproval" ColumnName="CancelAfterApproval" />
+          <ScalarProperty Name="CancellationRequestDate" ColumnName="CancellationRequestDate" />
+          <ScalarProperty Name="EarlyJoiningRequest" ColumnName="EarlyJoiningRequest" />
+          <ScalarProperty Name="EarlyJoinedLeaveHistID" ColumnName="EarlyJoinedLeaveHistID" />
+          <ScalarProperty Name="LeaveYear" ColumnName="LeaveYear" />
+          <ScalarProperty Name="IsLeaveExtended" ColumnName="IsLeaveExtended" />
+          <ScalarProperty Name="IsForwarded" ColumnName="IsForwarded" />
+          <ScalarProperty Name="FromApp" ColumnName="FromApp" />
+          <ScalarProperty Name="CancelReason_AfterApproval" ColumnName="CancelReason_AfterApproval" />
+          <ScalarProperty Name="RptOfficerRemarks_AfterApproval" ColumnName="RptOfficerRemarks_AfterApproval" />
+          <ScalarProperty Name="OrderPublished" ColumnName="OrderPublished" />
+          <ScalarProperty Name="LTCID" ColumnName="LTCID" />
+          <ScalarProperty Name="CombinedLeaveTypeID" ColumnName="CombinedLeaveTypeID" />
+          <ScalarProperty Name="CombinedFromDate" ColumnName="CombinedFromDate" />
+          <ScalarProperty Name="CombinedStartDayHalf" ColumnName="CombinedStartDayHalf" />
+          <ScalarProperty Name="CombinedToDate" ColumnName="CombinedToDate" />
+          <ScalarProperty Name="CombinedEndDayHalf" ColumnName="CombinedEndDayHalf" />
+          <ScalarProperty Name="CombinedTotalDays" ColumnName="CombinedTotalDays" />
+          <ScalarProperty Name="SLCLTypes" ColumnName="SLCLTypes" />
+          <ScalarProperty Name="LeaveTransBalance" ColumnName="LeaveTransBalance" />
+          <ScalarProperty Name="LeaveTransBalance_Numerator" ColumnName="LeaveTransBalance_Numerator" />
+          <ScalarProperty Name="LeaveTransBalance_Denominator" ColumnName="LeaveTransBalance_Denominator" />
+          <ScalarProperty Name="CombinedLeaveTransBalance" ColumnName="CombinedLeaveTransBalance" />
+          <ScalarProperty Name="CombinedLeaveTransBalance_Numerator" ColumnName="CombinedLeaveTransBalance_Numerator" />
+          <ScalarProperty Name="CombinedLeaveTransBalance_Denominator" ColumnName="CombinedLeaveTransBalance_Denominator" />
+          <ScalarProperty Name="SelfCancelAfterApproval" ColumnName="SelfCancelAfterApproval" />
+          <ScalarProperty Name="SelfCancelAfterApprovalOn" ColumnName="SelfCancelAfterApprovalOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="emppersonals">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.emppersonal">
+        <MappingFragment StoreEntitySet="emppersonal">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="officeid" ColumnName="officeid" />
+          <ScalarProperty Name="EmpNameTitle" ColumnName="EmpNameTitle" />
+          <ScalarProperty Name="empfname" ColumnName="empfname" />
+          <ScalarProperty Name="empmname" ColumnName="empmname" />
+          <ScalarProperty Name="emplname" ColumnName="emplname" />
+          <ScalarProperty Name="empnamelocal" ColumnName="empnamelocal" />
+          <ScalarProperty Name="empname_mlocal" ColumnName="empname_mlocal" />
+          <ScalarProperty Name="empname_Llocal" ColumnName="empname_Llocal" />
+          <ScalarProperty Name="empdob" ColumnName="empdob" />
+          <ScalarProperty Name="empfmh" ColumnName="empfmh" />
+          <ScalarProperty Name="empfmhname" ColumnName="empfmhname" />
+          <ScalarProperty Name="empfhm_mname" ColumnName="empfhm_mname" />
+          <ScalarProperty Name="empfhm_lname" ColumnName="empfhm_lname" />
+          <ScalarProperty Name="empmarst" ColumnName="empmarst" />
+          <ScalarProperty Name="empspouse" ColumnName="empspouse" />
+          <ScalarProperty Name="empidmasrk" ColumnName="empidmasrk" />
+          <ScalarProperty Name="empcaste" ColumnName="empcaste" />
+          <ScalarProperty Name="empreligion" ColumnName="empreligion" />
+          <ScalarProperty Name="empcategory" ColumnName="empcategory" />
+          <ScalarProperty Name="emphmst" ColumnName="emphmst" />
+          <ScalarProperty Name="emphmdist" ColumnName="emphmdist" />
+          <ScalarProperty Name="emphmtown" ColumnName="emphmtown" />
+          <ScalarProperty Name="esalarycd" ColumnName="esalarycd" />
+          <ScalarProperty Name="emphomeoff" ColumnName="emphomeoff" />
+          <ScalarProperty Name="empmedcer" ColumnName="empmedcer" />
+          <ScalarProperty Name="empcharcer" ColumnName="empcharcer" />
+          <ScalarProperty Name="empphoto" ColumnName="empphoto" />
+          <ScalarProperty Name="empfinger" ColumnName="empfinger" />
+          <ScalarProperty Name="emprail" ColumnName="emprail" />
+          <ScalarProperty Name="empremark" ColumnName="empremark" />
+          <ScalarProperty Name="empgender" ColumnName="empgender" />
+          <ScalarProperty Name="empblood" ColumnName="empblood" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="empheight" ColumnName="empheight" />
+          <ScalarProperty Name="currdesig" ColumnName="currdesig" />
+          <ScalarProperty Name="Subdesig_OLD" ColumnName="Subdesig_OLD" />
+          <ScalarProperty Name="nextincrement" ColumnName="nextincrement" />
+          <ScalarProperty Name="doeoffdesigincre" ColumnName="doeoffdesigincre" />
+          <ScalarProperty Name="cadre_cd" ColumnName="cadre_cd" />
+          <ScalarProperty Name="branchcd" ColumnName="branchcd" />
+          <ScalarProperty Name="postdeptid" ColumnName="postdeptid" />
+          <ScalarProperty Name="desigdescription" ColumnName="desigdescription" />
+          <ScalarProperty Name="estabdeptid" ColumnName="estabdeptid" />
+          <ScalarProperty Name="estabofficeid" ColumnName="estabofficeid" />
+          <ScalarProperty Name="policepinno" ColumnName="policepinno" />
+          <ScalarProperty Name="dofjoin" ColumnName="dofjoin" />
+          <ScalarProperty Name="dofretirecurr" ColumnName="dofretirecurr" />
+          <ScalarProperty Name="modeofreccurr" ColumnName="modeofreccurr" />
+          <ScalarProperty Name="emptypecurr" ColumnName="emptypecurr" />
+          <ScalarProperty Name="EmpProertyFileId" ColumnName="EmpProertyFileId" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="ServiceCd" ColumnName="ServiceCd" />
+          <ScalarProperty Name="GradingCd" ColumnName="GradingCd" />
+          <ScalarProperty Name="AppointmentCd" ColumnName="AppointmentCd" />
+          <ScalarProperty Name="StateCadre" ColumnName="StateCadre" />
+          <ScalarProperty Name="currentclass" ColumnName="currentclass" />
+          <ScalarProperty Name="Gazetted" ColumnName="Gazetted" />
+          <ScalarProperty Name="DEuserid" ColumnName="DEuserid" />
+          <ScalarProperty Name="DEdate" ColumnName="DEdate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="verify" ColumnName="verify" />
+          <ScalarProperty Name="VerifiedBy" ColumnName="VerifiedBy" />
+          <ScalarProperty Name="VerifiedDate" ColumnName="VerifiedDate" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="VALIDuserid" ColumnName="VALIDuserid" />
+          <ScalarProperty Name="stgpfcpstype" ColumnName="stgpfcpstype" />
+          <ScalarProperty Name="gpfcpsnumber" ColumnName="gpfcpsnumber" />
+          <ScalarProperty Name="PayCommision" ColumnName="PayCommision" />
+          <ScalarProperty Name="PayScale" ColumnName="PayScale" />
+          <ScalarProperty Name="PayBand" ColumnName="PayBand" />
+          <ScalarProperty Name="GradePay" ColumnName="GradePay" />
+          <ScalarProperty Name="BasicPay" ColumnName="BasicPay" />
+          <ScalarProperty Name="employeeexit" ColumnName="employeeexit" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="SubCategory" ColumnName="SubCategory" />
+          <ScalarProperty Name="departmentalEmpCode" ColumnName="departmentalEmpCode" />
+          <ScalarProperty Name="parentdeptid" ColumnName="parentdeptid" />
+          <ScalarProperty Name="TempEmpcd" ColumnName="TempEmpcd" />
+          <ScalarProperty Name="HealthStatusId" ColumnName="HealthStatusId" />
+          <ScalarProperty Name="mainestabofficeid" ColumnName="mainestabofficeid" />
+          <ScalarProperty Name="Parentofficeid" ColumnName="Parentofficeid" />
+          <ScalarProperty Name="distcd" ColumnName="distcd" />
+          <ScalarProperty Name="AppointmentDt" ColumnName="AppointmentDt" />
+          <ScalarProperty Name="ServiceJoiningDt" ColumnName="ServiceJoiningDt" />
+          <ScalarProperty Name="SeniorityNo" ColumnName="SeniorityNo" />
+          <ScalarProperty Name="joiningorder" ColumnName="joiningorder" />
+          <ScalarProperty Name="joiningorderdate" ColumnName="joiningorderdate" />
+          <ScalarProperty Name="SpecialityId" ColumnName="SpecialityId" />
+          <ScalarProperty Name="Subdesig" ColumnName="Subdesig" />
+          <ScalarProperty Name="CouncilRegistrationNo" ColumnName="CouncilRegistrationNo" />
+          <ScalarProperty Name="CouncilRegistrationDt" ColumnName="CouncilRegistrationDt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mAwardDetails">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mAwardDetail">
+        <MappingFragment StoreEntitySet="mAwardDetail">
+          <ScalarProperty Name="award_Id" ColumnName="award_Id" />
+          <ScalarProperty Name="award_Name" ColumnName="award_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mBloodGroups">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mBloodGroup">
+        <MappingFragment StoreEntitySet="mBloodGroup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mBloodGroupMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mBloodGroupMaster">
+        <MappingFragment StoreEntitySet="mBloodGroupMaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="BloodGpId" ColumnName="BloodGpId" />
+          <ScalarProperty Name="BloodGpName_eng" ColumnName="BloodGpName_eng" />
+          <ScalarProperty Name="BloodGpName_local" ColumnName="BloodGpName_local" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mbranchMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mbranchMaster">
+        <MappingFragment StoreEntitySet="mbranchMaster">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="officeid" ColumnName="officeid" />
+          <ScalarProperty Name="branchcd" ColumnName="branchcd" />
+          <ScalarProperty Name="branchnm" ColumnName="branchnm" />
+          <ScalarProperty Name="branchname_Local" ColumnName="branchname_Local" />
+          <ScalarProperty Name="DEUserId" ColumnName="DEUserId" />
+          <ScalarProperty Name="DEDate" ColumnName="DEDate" />
+          <ScalarProperty Name="CIPAdd" ColumnName="CIPAdd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mCategoryMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mCategoryMaster">
+        <MappingFragment StoreEntitySet="mCategoryMaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryName_local" ColumnName="CategoryName_local" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mClassMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mClassMaster">
+        <MappingFragment StoreEntitySet="mClassMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LocalName" ColumnName="LocalName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mdeptmasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mdeptmaster">
+        <MappingFragment StoreEntitySet="mdeptmaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="deptabbr" ColumnName="deptabbr" />
+          <ScalarProperty Name="deptname" ColumnName="deptname" />
+          <ScalarProperty Name="deptname_hindi" ColumnName="deptname_hindi" />
+          <ScalarProperty Name="deptphoto" ColumnName="deptphoto" />
+          <ScalarProperty Name="DeptConStr" ColumnName="DeptConStr" />
+          <ScalarProperty Name="GriNumber" ColumnName="GriNumber" />
+          <ScalarProperty Name="GriNumberUpdationDate" ColumnName="GriNumberUpdationDate" />
+          <ScalarProperty Name="LatestGriNumber" ColumnName="LatestGriNumber" />
+          <ScalarProperty Name="enivaran" ColumnName="enivaran" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="eSamadhanNote" ColumnName="eSamadhanNote" />
+          <ScalarProperty Name="eSamadhanOnline" ColumnName="eSamadhanOnline" />
+          <ScalarProperty Name="eSameekshaOnlineYN" ColumnName="eSameekshaOnlineYN" />
+          <ScalarProperty Name="eSameekshaWorkCode" ColumnName="eSameekshaWorkCode" />
+          <ScalarProperty Name="deptabbrLocal" ColumnName="deptabbrLocal" />
+          <ScalarProperty Name="eSameekshaWorkCodeYear" ColumnName="eSameekshaWorkCodeYear" />
+          <ScalarProperty Name="DEUserId" ColumnName="DEUserId" />
+          <ScalarProperty Name="DEDate" ColumnName="DEDate" />
+          <ScalarProperty Name="CIPAdd" ColumnName="CIPAdd" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EntityType" ColumnName="EntityType" />
+          <ScalarProperty Name="estimatedStrength" ColumnName="estimatedStrength" />
+          <ScalarProperty Name="HeadDeptID" ColumnName="HeadDeptID" />
+          <ScalarProperty Name="HeadDeptName" ColumnName="HeadDeptName" />
+          <ScalarProperty Name="HeadDeptName_Local" ColumnName="HeadDeptName_Local" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mdesigmasts">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mdesigmast">
+        <MappingFragment StoreEntitySet="mdesigmast">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="desigcode" ColumnName="desigcode" />
+          <ScalarProperty Name="designame" ColumnName="designame" />
+          <ScalarProperty Name="designame_Local" ColumnName="designame_Local" />
+          <ScalarProperty Name="desigabbr" ColumnName="desigabbr" />
+          <ScalarProperty Name="DEUserId" ColumnName="DEUserId" />
+          <ScalarProperty Name="DEDate" ColumnName="DEDate" />
+          <ScalarProperty Name="CIPAdd" ColumnName="CIPAdd" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RetirementAge" ColumnName="RetirementAge" />
+          <ScalarProperty Name="gazetted" ColumnName="gazetted" />
+          <ScalarProperty Name="PayScaleGrade" ColumnName="PayScaleGrade" />
+          <ScalarProperty Name="displayOrder" ColumnName="displayOrder" />
+          <ScalarProperty Name="DesigGroup" ColumnName="DesigGroup" />
+          <ScalarProperty Name="DesigClass" ColumnName="DesigClass" />
+          <ScalarProperty Name="Status_Use" ColumnName="Status_Use" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mFWblkmas">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mFWblkma">
+        <MappingFragment StoreEntitySet="mFWblkmas">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="dis_code" ColumnName="dis_code" />
+          <ScalarProperty Name="blk_code" ColumnName="blk_code" />
+          <ScalarProperty Name="blk_name" ColumnName="blk_name" />
+          <ScalarProperty Name="blk_nameh" ColumnName="blk_nameh" />
+          <ScalarProperty Name="blk_type" ColumnName="blk_type" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mFWdismas">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mFWdisma">
+        <MappingFragment StoreEntitySet="mFWdismas">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="dis_code" ColumnName="dis_code" />
+          <ScalarProperty Name="StateAbbr" ColumnName="StateAbbr" />
+          <ScalarProperty Name="dis_name" ColumnName="dis_name" />
+          <ScalarProperty Name="dis_namh" ColumnName="dis_namh" />
+          <ScalarProperty Name="tribal_nontribal" ColumnName="tribal_nontribal" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DistrictClass" ColumnName="DistrictClass" />
+          <ScalarProperty Name="DivisionCode" ColumnName="DivisionCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mFWpanmas">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mFWpanma">
+        <MappingFragment StoreEntitySet="mFWpanmas">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="dis_code" ColumnName="dis_code" />
+          <ScalarProperty Name="pan_code" ColumnName="pan_code" />
+          <ScalarProperty Name="blk_code" ColumnName="blk_code" />
+          <ScalarProperty Name="pan_name" ColumnName="pan_name" />
+          <ScalarProperty Name="pan_nameh" ColumnName="pan_nameh" />
+          <ScalarProperty Name="pan_type" ColumnName="pan_type" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mLeaveTypes">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mLeaveType">
+        <MappingFragment StoreEntitySet="mLeaveTypes">
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="LeaveTypeName" ColumnName="LeaveTypeName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="ForWomenOnly" ColumnName="ForWomenOnly" />
+          <ScalarProperty Name="AutoCreditable" ColumnName="AutoCreditable" />
+          <ScalarProperty Name="ForMenOnly" ColumnName="ForMenOnly" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mLoanTypes">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mLoanType">
+        <MappingFragment StoreEntitySet="mLoanType">
+          <ScalarProperty Name="LoanId" ColumnName="LoanId" />
+          <ScalarProperty Name="LoanName" ColumnName="LoanName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mMaritalStatus">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mMaritalStatu">
+        <MappingFragment StoreEntitySet="mMaritalStatus">
+          <ScalarProperty Name="MaritalId" ColumnName="MaritalId" />
+          <ScalarProperty Name="MaritalName" ColumnName="MaritalName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mMaritalStatusMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mMaritalStatusMaster">
+        <MappingFragment StoreEntitySet="mMaritalStatusMaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="MaritalStatusId" ColumnName="MaritalStatusId" />
+          <ScalarProperty Name="MaritalStatus_eng" ColumnName="MaritalStatus_eng" />
+          <ScalarProperty Name="MaritalStatus_local" ColumnName="MaritalStatus_local" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="NotApplicable_forMaritalBasedLeave" ColumnName="NotApplicable_forMaritalBasedLeave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mOfficeLevels">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mOfficeLevel">
+        <MappingFragment StoreEntitySet="mOfficeLevel">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="officelevel" ColumnName="officelevel" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="officetype" ColumnName="officetype" />
+          <ScalarProperty Name="officetylocal" ColumnName="officetylocal" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mofficemasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mofficemaster">
+        <MappingFragment StoreEntitySet="mofficemaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="officeid" ColumnName="officeid" />
+          <ScalarProperty Name="officelevel" ColumnName="officelevel" />
+          <ScalarProperty Name="officename" ColumnName="officename" />
+          <ScalarProperty Name="officeaddr" ColumnName="officeaddr" />
+          <ScalarProperty Name="distcd" ColumnName="distcd" />
+          <ScalarProperty Name="urbrul" ColumnName="urbrul" />
+          <ScalarProperty Name="tehsilcode" ColumnName="tehsilcode" />
+          <ScalarProperty Name="blockcd" ColumnName="blockcd" />
+          <ScalarProperty Name="panchcd" ColumnName="panchcd" />
+          <ScalarProperty Name="concd" ColumnName="concd" />
+          <ScalarProperty Name="desigcode" ColumnName="desigcode" />
+          <ScalarProperty Name="reportoffice" ColumnName="reportoffice" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="Wh_SSt" ColumnName="Wh_SSt" />
+          <ScalarProperty Name="officenamelocal" ColumnName="officenamelocal" />
+          <ScalarProperty Name="officeaddresslocal" ColumnName="officeaddresslocal" />
+          <ScalarProperty Name="NodalOfficerEmpCode" ColumnName="NodalOfficerEmpCode" />
+          <ScalarProperty Name="grcellincharge" ColumnName="grcellincharge" />
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+          <ScalarProperty Name="isgrcell" ColumnName="isgrcell" />
+          <ScalarProperty Name="grcellinchargedeptid" ColumnName="grcellinchargedeptid" />
+          <ScalarProperty Name="DEuserid" ColumnName="DEuserid" />
+          <ScalarProperty Name="DEdate" ColumnName="DEdate" />
+          <ScalarProperty Name="CIPAdd" ColumnName="CIPAdd" />
+          <ScalarProperty Name="officephone" ColumnName="officephone" />
+          <ScalarProperty Name="GenOffice" ColumnName="GenOffice" />
+          <ScalarProperty Name="mapoldofficeid" ColumnName="mapoldofficeid" />
+          <ScalarProperty Name="mapnewofficeid" ColumnName="mapnewofficeid" />
+          <ScalarProperty Name="officetype" ColumnName="officetype" />
+          <ScalarProperty Name="tribalAreaCode" ColumnName="tribalAreaCode" />
+          <ScalarProperty Name="ddodemandcd" ColumnName="ddodemandcd" />
+          <ScalarProperty Name="treasurycd" ColumnName="treasurycd" />
+          <ScalarProperty Name="mobilenumber" ColumnName="mobilenumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="attachedoffice" ColumnName="attachedoffice" />
+          <ScalarProperty Name="OfficeState" ColumnName="OfficeState" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="DepartmentalOfficeCode" ColumnName="DepartmentalOfficeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mofficemasterForReports">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mofficemasterForReport">
+        <MappingFragment StoreEntitySet="mofficemasterForReports">
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="deptname" ColumnName="deptname" />
+          <ScalarProperty Name="officeid" ColumnName="officeid" />
+          <ScalarProperty Name="officelevel" ColumnName="officelevel" />
+          <ScalarProperty Name="officename" ColumnName="officename" />
+          <ScalarProperty Name="reportofficeid" ColumnName="reportofficeid" />
+          <ScalarProperty Name="reportofficename" ColumnName="reportofficename" />
+          <ScalarProperty Name="OfficeState" ColumnName="OfficeState" />
+          <ScalarProperty Name="distcd" ColumnName="distcd" />
+          <ScalarProperty Name="dis_name" ColumnName="dis_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mOfficeTypes">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mOfficeType">
+        <MappingFragment StoreEntitySet="mOfficeType">
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+          <ScalarProperty Name="OfficetypeId" ColumnName="OfficetypeId" />
+          <ScalarProperty Name="OfficeTypeName" ColumnName="OfficeTypeName" />
+          <ScalarProperty Name="OfficeTypeName_Local" ColumnName="OfficeTypeName_Local" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mOrderTypes">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mOrderType">
+        <MappingFragment StoreEntitySet="mOrderType">
+          <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+          <ScalarProperty Name="OrderName" ColumnName="OrderName" />
+          <ScalarProperty Name="OrderDescription" ColumnName="OrderDescription" />
+          <ScalarProperty Name="OrderBehaviour" ColumnName="OrderBehaviour" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="EntryBy" ColumnName="EntryBy" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="Entry_Type" ColumnName="Entry_Type" />
+          <ScalarProperty Name="EmployeeExit" ColumnName="EmployeeExit" />
+          <ScalarProperty Name="EmployeeStatus" ColumnName="EmployeeStatus" />
+          <ScalarProperty Name="EmployeeStatusKey" ColumnName="EmployeeStatusKey" />
+          <ScalarProperty Name="FinancialChngFlag" ColumnName="FinancialChngFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mpiscadremasts">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mpiscadremast">
+        <MappingFragment StoreEntitySet="mpiscadremast">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="Cadre_cd" ColumnName="Cadre_cd" />
+          <ScalarProperty Name="Cadre_nm" ColumnName="Cadre_nm" />
+          <ScalarProperty Name="cadre_abbr" ColumnName="cadre_abbr" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="Cadre_nmLocal" ColumnName="Cadre_nmLocal" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mpisemptypes">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mpisemptype">
+        <MappingFragment StoreEntitySet="mpisemptype">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="emp_type" ColumnName="emp_type" />
+          <ScalarProperty Name="emp_name" ColumnName="emp_name" />
+          <ScalarProperty Name="Empname_local" ColumnName="Empname_local" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mqualis">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mquali">
+        <MappingFragment StoreEntitySet="mquali">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ncocode" ColumnName="ncocode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="qualilevel" ColumnName="qualilevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mquali_29_Dec_2020">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mquali_29_Dec_2020">
+        <MappingFragment StoreEntitySet="mquali_29_Dec_2020">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ncocode" ColumnName="ncocode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mqualilevels">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mqualilevel">
+        <MappingFragment StoreEntitySet="mqualilevel">
+          <ScalarProperty Name="StdId" ColumnName="StdId" />
+          <ScalarProperty Name="StdName" ColumnName="StdName" />
+          <ScalarProperty Name="StdName_Local" ColumnName="StdName_Local" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRelationMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mRelationMaster">
+        <MappingFragment StoreEntitySet="mRelationMaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="RelationId" ColumnName="RelationId" />
+          <ScalarProperty Name="RelationName_eng" ColumnName="RelationName_eng" />
+          <ScalarProperty Name="RelationName_local" ColumnName="RelationName_local" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Applicable_ForCCL" ColumnName="Applicable_ForCCL" />
+          <ScalarProperty Name="Applicable_ForMaritalStatus" ColumnName="Applicable_ForMaritalStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mReligionTypeMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mReligionTypeMaster">
+        <MappingFragment StoreEntitySet="mReligionTypeMaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="ReligionId" ColumnName="ReligionId" />
+          <ScalarProperty Name="ReligionName" ColumnName="ReligionName" />
+          <ScalarProperty Name="ReligionName_local" ColumnName="ReligionName_local" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStates">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mState">
+        <MappingFragment StoreEntitySet="mState">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateName_Local" ColumnName="StateName_Local" />
+          <ScalarProperty Name="StateAbbr" ColumnName="StateAbbr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mstatemasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mstatemaster">
+        <MappingFragment StoreEntitySet="mstatemaster">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateName_Local" ColumnName="StateName_Local" />
+          <ScalarProperty Name="StateAbbr" ColumnName="StateAbbr" />
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+          <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+          <ScalarProperty Name="StateName_Culture" ColumnName="StateName_Culture" />
+          <ScalarProperty Name="LanguagePreferences" ColumnName="LanguagePreferences" />
+          <ScalarProperty Name="StateMinisType" ColumnName="StateMinisType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStateServiceGradingMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mStateServiceGradingMaster">
+        <MappingFragment StoreEntitySet="mStateServiceGradingMaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="ServiceCd" ColumnName="ServiceCd" />
+          <ScalarProperty Name="GradingCd" ColumnName="GradingCd" />
+          <ScalarProperty Name="GradingName" ColumnName="GradingName" />
+          <ScalarProperty Name="GradingName_Local" ColumnName="GradingName_Local" />
+          <ScalarProperty Name="DeUserId" ColumnName="DeUserId" />
+          <ScalarProperty Name="DeDate" ColumnName="DeDate" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="LockedStatus" ColumnName="LockedStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStateServiceMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mStateServiceMaster">
+        <MappingFragment StoreEntitySet="mStateServiceMaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="Deptid" ColumnName="Deptid" />
+          <ScalarProperty Name="ServiceCd" ColumnName="ServiceCd" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="ServiceName_Local" ColumnName="ServiceName_Local" />
+          <ScalarProperty Name="ServiceAbbr" ColumnName="ServiceAbbr" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="LockedStatus" ColumnName="LockedStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mSubCategoryMasters">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.mSubCategoryMaster">
+        <MappingFragment StoreEntitySet="mSubCategoryMaster">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="SubCatId" ColumnName="SubCatId" />
+          <ScalarProperty Name="SubCatName" ColumnName="SubCatName" />
+          <ScalarProperty Name="SubCatName_local" ColumnName="SubCatName_local" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisawarddetails">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisawarddetail">
+        <MappingFragment StoreEntitySet="pisawarddetail">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="dofaward" ColumnName="dofaward" />
+          <ScalarProperty Name="awardtype" ColumnName="awardtype" />
+          <ScalarProperty Name="awarddetail" ColumnName="awarddetail" />
+          <ScalarProperty Name="updation_date" ColumnName="updation_date" />
+          <ScalarProperty Name="updated_by" ColumnName="updated_by" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="verify" ColumnName="verify" />
+          <ScalarProperty Name="verified_by" ColumnName="verified_by" />
+          <ScalarProperty Name="CIPAdress" ColumnName="CIPAdress" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisempaddresses">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisempaddress">
+        <MappingFragment StoreEntitySet="pisempaddress">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="preaddress" ColumnName="preaddress" />
+          <ScalarProperty Name="prestate" ColumnName="prestate" />
+          <ScalarProperty Name="predistt" ColumnName="predistt" />
+          <ScalarProperty Name="preblock" ColumnName="preblock" />
+          <ScalarProperty Name="pretown" ColumnName="pretown" />
+          <ScalarProperty Name="prepin" ColumnName="prepin" />
+          <ScalarProperty Name="prephone" ColumnName="prephone" />
+          <ScalarProperty Name="premobile" ColumnName="premobile" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="prePoliceStation" ColumnName="prePoliceStation" />
+          <ScalarProperty Name="preStreetNumber" ColumnName="preStreetNumber" />
+          <ScalarProperty Name="preMh_Vill" ColumnName="preMh_Vill" />
+          <ScalarProperty Name="preHouseNumber" ColumnName="preHouseNumber" />
+          <ScalarProperty Name="preWardNumber" ColumnName="preWardNumber" />
+          <ScalarProperty Name="permaddr" ColumnName="permaddr" />
+          <ScalarProperty Name="permstate" ColumnName="permstate" />
+          <ScalarProperty Name="permdistt" ColumnName="permdistt" />
+          <ScalarProperty Name="permblock" ColumnName="permblock" />
+          <ScalarProperty Name="permtown" ColumnName="permtown" />
+          <ScalarProperty Name="permpin" ColumnName="permpin" />
+          <ScalarProperty Name="permphone" ColumnName="permphone" />
+          <ScalarProperty Name="permobile" ColumnName="permobile" />
+          <ScalarProperty Name="peremail" ColumnName="peremail" />
+          <ScalarProperty Name="perPoliceStation" ColumnName="perPoliceStation" />
+          <ScalarProperty Name="perStreetNumber" ColumnName="perStreetNumber" />
+          <ScalarProperty Name="perMh_Vill" ColumnName="perMh_Vill" />
+          <ScalarProperty Name="perHouseNumber" ColumnName="perHouseNumber" />
+          <ScalarProperty Name="perWardNumber" ColumnName="perWardNumber" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisempdepproceeds">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisempdepproceed">
+        <MappingFragment StoreEntitySet="pisempdepproceed">
+          <ScalarProperty Name="Stateid" ColumnName="Stateid" />
+          <ScalarProperty Name="deptprocid" ColumnName="deptprocid" />
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="ChargeStatus" ColumnName="ChargeStatus" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="MPDpenaltyimposed" ColumnName="MPDpenaltyimposed" />
+          <ScalarProperty Name="MPDorderno" ColumnName="MPDorderno" />
+          <ScalarProperty Name="MPDdate" ColumnName="MPDdate" />
+          <ScalarProperty Name="DPD_PDorderno" ColumnName="DPD_PDorderno" />
+          <ScalarProperty Name="DPD_PDorderdate" ColumnName="DPD_PDorderdate" />
+          <ScalarProperty Name="DPD_PIfinancialyear" ColumnName="DPD_PIfinancialyear" />
+          <ScalarProperty Name="DPD_PIfromdate" ColumnName="DPD_PIfromdate" />
+          <ScalarProperty Name="DPD_PItodate" ColumnName="DPD_PItodate" />
+          <ScalarProperty Name="DPD_FDfileno" ColumnName="DPD_FDfileno" />
+          <ScalarProperty Name="DPD_DelinquentEPdept" ColumnName="DPD_DelinquentEPdept" />
+          <ScalarProperty Name="DPD_DelinquentEPoffice" ColumnName="DPD_DelinquentEPoffice" />
+          <ScalarProperty Name="DPD_DelinquentEPdesig" ColumnName="DPD_DelinquentEPdesig" />
+          <ScalarProperty Name="DPD_SReffdateofsus" ColumnName="DPD_SReffdateofsus" />
+          <ScalarProperty Name="DPD_SRsusordno" ColumnName="DPD_SRsusordno" />
+          <ScalarProperty Name="DPD_SRsusdate" ColumnName="DPD_SRsusdate" />
+          <ScalarProperty Name="DPD_SReffdateofrev" ColumnName="DPD_SReffdateofrev" />
+          <ScalarProperty Name="DPD_SRrevordno" ColumnName="DPD_SRrevordno" />
+          <ScalarProperty Name="DPD_SRrevdate" ColumnName="DPD_SRrevdate" />
+          <ScalarProperty Name="DPD_CSordno" ColumnName="DPD_CSordno" />
+          <ScalarProperty Name="DPD_CSdate" ColumnName="DPD_CSdate" />
+          <ScalarProperty Name="DPD_CDappointmentdateofio" ColumnName="DPD_CDappointmentdateofio" />
+          <ScalarProperty Name="DPD_CDinqoffordno" ColumnName="DPD_CDinqoffordno" />
+          <ScalarProperty Name="DPD_CDinqoffdate" ColumnName="DPD_CDinqoffdate" />
+          <ScalarProperty Name="DPD_CDinqoffgpfno" ColumnName="DPD_CDinqoffgpfno" />
+          <ScalarProperty Name="DPD_CDinqoffname" ColumnName="DPD_CDinqoffname" />
+          <ScalarProperty Name="DPD_CDinqoffdept" ColumnName="DPD_CDinqoffdept" />
+          <ScalarProperty Name="DPD_CDinqoffdesig" ColumnName="DPD_CDinqoffdesig" />
+          <ScalarProperty Name="DPD_CDappointmentdateofpo" ColumnName="DPD_CDappointmentdateofpo" />
+          <ScalarProperty Name="DPD_CDpreoffordno" ColumnName="DPD_CDpreoffordno" />
+          <ScalarProperty Name="DPD_CDpreoffdate" ColumnName="DPD_CDpreoffdate" />
+          <ScalarProperty Name="DPD_CDpreoffgpfno" ColumnName="DPD_CDpreoffgpfno" />
+          <ScalarProperty Name="DPD_CDpreoffname" ColumnName="DPD_CDpreoffname" />
+          <ScalarProperty Name="DPD_CDpreoffdept" ColumnName="DPD_CDpreoffdept" />
+          <ScalarProperty Name="DPD_CDpreoffdesig" ColumnName="DPD_CDpreoffdesig" />
+          <ScalarProperty Name="DPD_RDreplacementof" ColumnName="DPD_RDreplacementof" />
+          <ScalarProperty Name="DPD_RDnameofreplacedoff" ColumnName="DPD_RDnameofreplacedoff" />
+          <ScalarProperty Name="DPD_RDdeptofreplacedoff" ColumnName="DPD_RDdeptofreplacedoff" />
+          <ScalarProperty Name="DPD_RDdesigofreplacedoff" ColumnName="DPD_RDdesigofreplacedoff" />
+          <ScalarProperty Name="DPD_RDdateofappointment" ColumnName="DPD_RDdateofappointment" />
+          <ScalarProperty Name="DPD_RDgpfnoofreplofficer" ColumnName="DPD_RDgpfnoofreplofficer" />
+          <ScalarProperty Name="DPD_RDnameofreplofficer" ColumnName="DPD_RDnameofreplofficer" />
+          <ScalarProperty Name="DPD_RDdeptofreplofficer" ColumnName="DPD_RDdeptofreplofficer" />
+          <ScalarProperty Name="DPD_RDdesigofreplofficer" ColumnName="DPD_RDdesigofreplofficer" />
+          <ScalarProperty Name="DPD_RDordnoofrepl" ColumnName="DPD_RDordnoofrepl" />
+          <ScalarProperty Name="DPD_RDorddateofrepl" ColumnName="DPD_RDorddateofrepl" />
+          <ScalarProperty Name="DPD_RDremarksofrepl" ColumnName="DPD_RDremarksofrepl" />
+          <ScalarProperty Name="DPS_CSIDcasestatus" ColumnName="DPS_CSIDcasestatus" />
+          <ScalarProperty Name="DPS_CSIDorderno" ColumnName="DPS_CSIDorderno" />
+          <ScalarProperty Name="DPS_CSIDdate" ColumnName="DPS_CSIDdate" />
+          <ScalarProperty Name="DPS_CSIDdisofpnlt" ColumnName="DPS_CSIDdisofpnlt" />
+          <ScalarProperty Name="DPS_CSIDpercentanddurationofpension" ColumnName="DPS_CSIDpercentanddurationofpension" />
+          <ScalarProperty Name="DPS_AOappealbyofficer" ColumnName="DPS_AOappealbyofficer" />
+          <ScalarProperty Name="DPS_AOdept" ColumnName="DPS_AOdept" />
+          <ScalarProperty Name="DPS_AOdesig" ColumnName="DPS_AOdesig" />
+          <ScalarProperty Name="DPS_AOoutcomeofapl" ColumnName="DPS_AOoutcomeofapl" />
+          <ScalarProperty Name="DPS_AOordno" ColumnName="DPS_AOordno" />
+          <ScalarProperty Name="DPS_AOdate" ColumnName="DPS_AOdate" />
+          <ScalarProperty Name="DPS_AOdisofpnlt" ColumnName="DPS_AOdisofpnlt" />
+          <ScalarProperty Name="DPS_AOpercentanddurationofpension" ColumnName="DPS_AOpercentanddurationofpension" />
+          <ScalarProperty Name="CPD_CCDfirno" ColumnName="CPD_CCDfirno" />
+          <ScalarProperty Name="CPD_CCDfirdate" ColumnName="CPD_CCDfirdate" />
+          <ScalarProperty Name="CPD_CCDpolicevigcbi" ColumnName="CPD_CCDpolicevigcbi" />
+          <ScalarProperty Name="CPD_CCDpolicestationdistrict" ColumnName="CPD_CCDpolicestationdistrict" />
+          <ScalarProperty Name="CPD_CCDnameofpolicestation" ColumnName="CPD_CCDnameofpolicestation" />
+          <ScalarProperty Name="CPD_CCDgrno" ColumnName="CPD_CCDgrno" />
+          <ScalarProperty Name="CPD_CCDgrdate" ColumnName="CPD_CCDgrdate" />
+          <ScalarProperty Name="CPD_PDprosecutionsanordno" ColumnName="CPD_PDprosecutionsanordno" />
+          <ScalarProperty Name="CPD_PDprosecutionsandate" ColumnName="CPD_PDprosecutionsandate" />
+          <ScalarProperty Name="CPD_PDdetailsoftrilcourt" ColumnName="CPD_PDdetailsoftrilcourt" />
+          <ScalarProperty Name="CPChargeSheetDate" ColumnName="CPChargeSheetDate" />
+          <ScalarProperty Name="CPD_CDcognizance" ColumnName="CPD_CDcognizance" />
+          <ScalarProperty Name="CPD_OCPoutcomeofcriminalproceeding" ColumnName="CPD_OCPoutcomeofcriminalproceeding" />
+          <ScalarProperty Name="CPD_OCPdetailsOfPunishment" ColumnName="CPD_OCPdetailsOfPunishment" />
+          <ScalarProperty Name="LPCaseNo" ColumnName="LPCaseNo" />
+          <ScalarProperty Name="LPCaseYear" ColumnName="LPCaseYear" />
+          <ScalarProperty Name="LPCaseStatus" ColumnName="LPCaseStatus" />
+          <ScalarProperty Name="LPrecommendation" ColumnName="LPrecommendation" />
+          <ScalarProperty Name="LPactiontknbydept" ColumnName="LPactiontknbydept" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisempeducations">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisempeducation">
+        <MappingFragment StoreEntitySet="pisempeducation">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="eduid" ColumnName="eduid" />
+          <ScalarProperty Name="eduyear" ColumnName="eduyear" />
+          <ScalarProperty Name="eduinst" ColumnName="eduinst" />
+          <ScalarProperty Name="edustream" ColumnName="edustream" />
+          <ScalarProperty Name="edumark" ColumnName="edumark" />
+          <ScalarProperty Name="edugrade" ColumnName="edugrade" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_by" ColumnName="Updated_by" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="CIPAdress" ColumnName="CIPAdress" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="AttachmentExt" ColumnName="AttachmentExt" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="eduAcquringStatus" ColumnName="eduAcquringStatus" />
+          <ScalarProperty Name="RollNo_EnrolmentNo" ColumnName="RollNo_EnrolmentNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisempfamilies">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisempfamily">
+        <MappingFragment StoreEntitySet="pisempfamily">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="memname" ColumnName="memname" />
+          <ScalarProperty Name="memrelation" ColumnName="memrelation" />
+          <ScalarProperty Name="memdob" ColumnName="memdob" />
+          <ScalarProperty Name="memdepend" ColumnName="memdepend" />
+          <ScalarProperty Name="memempstcent" ColumnName="memempstcent" />
+          <ScalarProperty Name="memempiph" ColumnName="memempiph" />
+          <ScalarProperty Name="memdepname" ColumnName="memdepname" />
+          <ScalarProperty Name="memiphempcd" ColumnName="memiphempcd" />
+          <ScalarProperty Name="memesalarycd" ColumnName="memesalarycd" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="CIPAdress" ColumnName="CIPAdress" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="MemberUIdNo" ColumnName="MemberUIdNo" />
+          <ScalarProperty Name="memberEdu" ColumnName="memberEdu" />
+          <ScalarProperty Name="ActiveStatus" ColumnName="ActiveStatus" />
+          <ScalarProperty Name="InActiveReason" ColumnName="InActiveReason" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="AttachmentExt" ColumnName="AttachmentExt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisemphistories">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisemphistory">
+        <MappingFragment StoreEntitySet="pisemphistory">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="transtype" ColumnName="transtype" />
+          <ScalarProperty Name="orderno" ColumnName="orderno" />
+          <ScalarProperty Name="orderdt" ColumnName="orderdt" />
+          <ScalarProperty Name="StateCodeFrom" ColumnName="StateCodeFrom" />
+          <ScalarProperty Name="StateCodeTo" ColumnName="StateCodeTo" />
+          <ScalarProperty Name="DeptIDFrom" ColumnName="DeptIDFrom" />
+          <ScalarProperty Name="NewdeptID" ColumnName="NewdeptID" />
+          <ScalarProperty Name="NewDeptNameFrom" ColumnName="NewDeptNameFrom" />
+          <ScalarProperty Name="NewDeptNameTo" ColumnName="NewDeptNameTo" />
+          <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+          <ScalarProperty Name="newofficeid" ColumnName="newofficeid" />
+          <ScalarProperty Name="NewOfficeNameFrom" ColumnName="NewOfficeNameFrom" />
+          <ScalarProperty Name="NewOfficeNameTo" ColumnName="NewOfficeNameTo" />
+          <ScalarProperty Name="DesignationID" ColumnName="DesignationID" />
+          <ScalarProperty Name="newdesigcd" ColumnName="newdesigcd" />
+          <ScalarProperty Name="NewDesignationNameFrom" ColumnName="NewDesignationNameFrom" />
+          <ScalarProperty Name="NewDesignationNameTo" ColumnName="NewDesignationNameTo" />
+          <ScalarProperty Name="NewJoiningDate" ColumnName="NewJoiningDate" />
+          <ScalarProperty Name="areatype" ColumnName="areatype" />
+          <ScalarProperty Name="newclass" ColumnName="newclass" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="IsAdditionalCharge" ColumnName="IsAdditionalCharge" />
+          <ScalarProperty Name="PayCommissionMasterID" ColumnName="PayCommissionMasterID" />
+          <ScalarProperty Name="PayScaleMasterID" ColumnName="PayScaleMasterID" />
+          <ScalarProperty Name="PayBandMasterID" ColumnName="PayBandMasterID" />
+          <ScalarProperty Name="GradePayMasterID" ColumnName="GradePayMasterID" />
+          <ScalarProperty Name="baspay" ColumnName="baspay" />
+          <ScalarProperty Name="FromBasicPay" ColumnName="FromBasicPay" />
+          <ScalarProperty Name="FromPayCommissionString" ColumnName="FromPayCommissionString" />
+          <ScalarProperty Name="FinancialBeneficialDate" ColumnName="FinancialBeneficialDate" />
+          <ScalarProperty Name="PayScaleDate" ColumnName="PayScaleDate" />
+          <ScalarProperty Name="IsReal" ColumnName="IsReal" />
+          <ScalarProperty Name="IsNotional" ColumnName="IsNotional" />
+          <ScalarProperty Name="ServiceCode" ColumnName="ServiceCode" />
+          <ScalarProperty Name="ServiceGradingCode" ColumnName="ServiceGradingCode" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="depuoffice" ColumnName="depuoffice" />
+          <ScalarProperty Name="incredt" ColumnName="incredt" />
+          <ScalarProperty Name="payscale" ColumnName="payscale" />
+          <ScalarProperty Name="TransDeptID" ColumnName="TransDeptID" />
+          <ScalarProperty Name="Branchcd" ColumnName="Branchcd" />
+          <ScalarProperty Name="BranchCodeFrom" ColumnName="BranchCodeFrom" />
+          <ScalarProperty Name="Cadre" ColumnName="Cadre" />
+          <ScalarProperty Name="estabdeptid" ColumnName="estabdeptid" />
+          <ScalarProperty Name="estabofficeid" ColumnName="estabofficeid" />
+          <ScalarProperty Name="dofrelieve" ColumnName="dofrelieve" />
+          <ScalarProperty Name="linkeduniqueid" ColumnName="linkeduniqueid" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="AttachmentExt" ColumnName="AttachmentExt" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="FromBranchName" ColumnName="FromBranchName" />
+          <ScalarProperty Name="TobranchName" ColumnName="TobranchName" />
+          <ScalarProperty Name="ToBranchCode" ColumnName="ToBranchCode" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="fromSubdesig" ColumnName="fromSubdesig" />
+          <ScalarProperty Name="toSubdesig" ColumnName="toSubdesig" />
+          <ScalarProperty Name="fromSubdesig_OLD" ColumnName="fromSubdesig_OLD" />
+          <ScalarProperty Name="toSubdesig_OLD" ColumnName="toSubdesig_OLD" />
+          <ScalarProperty Name="fromServiceCd" ColumnName="fromServiceCd" />
+          <ScalarProperty Name="fromGradingcd" ColumnName="fromGradingcd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisempjoinrelievedetails">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisempjoinrelievedetail">
+        <MappingFragment StoreEntitySet="pisempjoinrelievedetail">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="joinid" ColumnName="joinid" />
+          <ScalarProperty Name="joindeptid" ColumnName="joindeptid" />
+          <ScalarProperty Name="joinofficeid" ColumnName="joinofficeid" />
+          <ScalarProperty Name="joinreason" ColumnName="joinreason" />
+          <ScalarProperty Name="joinonAForFN" ColumnName="joinonAForFN" />
+          <ScalarProperty Name="joindt" ColumnName="joindt" />
+          <ScalarProperty Name="joinordernodt" ColumnName="joinordernodt" />
+          <ScalarProperty Name="joinorderdt" ColumnName="joinorderdt" />
+          <ScalarProperty Name="joindesig" ColumnName="joindesig" />
+          <ScalarProperty Name="joinSubDesig" ColumnName="joinSubDesig" />
+          <ScalarProperty Name="joinDeptName" ColumnName="joinDeptName" />
+          <ScalarProperty Name="joinOfficeStateId" ColumnName="joinOfficeStateId" />
+          <ScalarProperty Name="joinOfficeDistcd" ColumnName="joinOfficeDistcd" />
+          <ScalarProperty Name="joinOfficeName" ColumnName="joinOfficeName" />
+          <ScalarProperty Name="joinDesigName" ColumnName="joinDesigName" />
+          <ScalarProperty Name="areaasTribalhardsub" ColumnName="areaasTribalhardsub" />
+          <ScalarProperty Name="whetherhomedist" ColumnName="whetherhomedist" />
+          <ScalarProperty Name="joinbranch" ColumnName="joinbranch" />
+          <ScalarProperty Name="joincadre" ColumnName="joincadre" />
+          <ScalarProperty Name="joinclass" ColumnName="joinclass" />
+          <ScalarProperty Name="JoinServiceCd" ColumnName="JoinServiceCd" />
+          <ScalarProperty Name="JoinServiceGrading" ColumnName="JoinServiceGrading" />
+          <ScalarProperty Name="joinremarks" ColumnName="joinremarks" />
+          <ScalarProperty Name="joinemptype" ColumnName="joinemptype" />
+          <ScalarProperty Name="joingazngaz" ColumnName="joingazngaz" />
+          <ScalarProperty Name="joinverify" ColumnName="joinverify" />
+          <ScalarProperty Name="J_OrderPDF" ColumnName="J_OrderPDF" />
+          <ScalarProperty Name="relieveid" ColumnName="relieveid" />
+          <ScalarProperty Name="relievedt" ColumnName="relievedt" />
+          <ScalarProperty Name="relieveaffn" ColumnName="relieveaffn" />
+          <ScalarProperty Name="relievetranferorderno" ColumnName="relievetranferorderno" />
+          <ScalarProperty Name="relievetranferorderdt" ColumnName="relievetranferorderdt" />
+          <ScalarProperty Name="relievedeptid" ColumnName="relievedeptid" />
+          <ScalarProperty Name="relieveofficeid" ColumnName="relieveofficeid" />
+          <ScalarProperty Name="relievedesig" ColumnName="relievedesig" />
+          <ScalarProperty Name="relievesubdesig" ColumnName="relievesubdesig" />
+          <ScalarProperty Name="relievebranch" ColumnName="relievebranch" />
+          <ScalarProperty Name="relieveremark" ColumnName="relieveremark" />
+          <ScalarProperty Name="relieveestabdeptid" ColumnName="relieveestabdeptid" />
+          <ScalarProperty Name="relieveestabofficeid" ColumnName="relieveestabofficeid" />
+          <ScalarProperty Name="relievefordesig" ColumnName="relievefordesig" />
+          <ScalarProperty Name="relieveforsubdesig" ColumnName="relieveforsubdesig" />
+          <ScalarProperty Name="relieveestabDeptName" ColumnName="relieveestabDeptName" />
+          <ScalarProperty Name="relieveestabOfficeStateId" ColumnName="relieveestabOfficeStateId" />
+          <ScalarProperty Name="relieveestabOfficeDistcd" ColumnName="relieveestabOfficeDistcd" />
+          <ScalarProperty Name="relieveestabOfficeName" ColumnName="relieveestabOfficeName" />
+          <ScalarProperty Name="relieveDesigName" ColumnName="relieveDesigName" />
+          <ScalarProperty Name="updatedby" ColumnName="updatedby" />
+          <ScalarProperty Name="updateondate" ColumnName="updateondate" />
+          <ScalarProperty Name="relieveupdateby" ColumnName="relieveupdateby" />
+          <ScalarProperty Name="relieveupdateondate" ColumnName="relieveupdateondate" />
+          <ScalarProperty Name="IsAdditionalCharge" ColumnName="IsAdditionalCharge" />
+          <ScalarProperty Name="relieveVerify" ColumnName="relieveVerify" />
+          <ScalarProperty Name="R_OrderPDF" ColumnName="R_OrderPDF" />
+          <ScalarProperty Name="EntryStatus" ColumnName="EntryStatus" />
+          <ScalarProperty Name="REntryStatus" ColumnName="REntryStatus" />
+          <ScalarProperty Name="IsOnlineJoin" ColumnName="IsOnlineJoin" />
+          <ScalarProperty Name="IsJoinOrderOnline" ColumnName="IsJoinOrderOnline" />
+          <ScalarProperty Name="IsOnlineRelieve" ColumnName="IsOnlineRelieve" />
+          <ScalarProperty Name="IsRelieveOrderOnline" ColumnName="IsRelieveOrderOnline" />
+          <ScalarProperty Name="IsJoinPublished" ColumnName="IsJoinPublished" />
+          <ScalarProperty Name="IsRelievedPublished" ColumnName="IsRelievedPublished" />
+          <ScalarProperty Name="JoinCopyTo" ColumnName="JoinCopyTo" />
+          <ScalarProperty Name="JoinOrderBy" ColumnName="JoinOrderBy" />
+          <ScalarProperty Name="RelieveCopyTo" ColumnName="RelieveCopyTo" />
+          <ScalarProperty Name="RelieveOrderBy" ColumnName="RelieveOrderBy" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="entitledJoinTime" ColumnName="entitledJoinTime" />
+          <ScalarProperty Name="entitledJoinNoOfDays" ColumnName="entitledJoinNoOfDays" />
+          <ScalarProperty Name="AvailedNoOfDays" ColumnName="AvailedNoOfDays" />
+          <ScalarProperty Name="NotAvailedNoOfDays" ColumnName="NotAvailedNoOfDays" />
+          <ScalarProperty Name="ReleivDesigid" ColumnName="ReleivDesigid" />
+          <ScalarProperty Name="ReleivOfficerid" ColumnName="ReleivOfficerid" />
+          <ScalarProperty Name="SignDesigid" ColumnName="SignDesigid" />
+          <ScalarProperty Name="SignOfficerid" ColumnName="SignOfficerid" />
+          <ScalarProperty Name="Authority_Deptid" ColumnName="Authority_Deptid" />
+          <ScalarProperty Name="Authority_Code" ColumnName="Authority_Code" />
+          <ScalarProperty Name="JoinDesigid" ColumnName="JoinDesigid" />
+          <ScalarProperty Name="JoinOfficerid" ColumnName="JoinOfficerid" />
+          <ScalarProperty Name="JoinSignDesigid" ColumnName="JoinSignDesigid" />
+          <ScalarProperty Name="JoinSignOfficerid" ColumnName="JoinSignOfficerid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisempleaves">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisempleave">
+        <MappingFragment StoreEntitySet="pisempleave">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="leavetype" ColumnName="leavetype" />
+          <ScalarProperty Name="fromdt" ColumnName="fromdt" />
+          <ScalarProperty Name="todt" ColumnName="todt" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="ltcavail" ColumnName="ltcavail" />
+          <ScalarProperty Name="stationleave" ColumnName="stationleave" />
+          <ScalarProperty Name="sanctofficer" ColumnName="sanctofficer" />
+          <ScalarProperty Name="leavest" ColumnName="leavest" />
+          <ScalarProperty Name="leavbal" ColumnName="leavbal" />
+          <ScalarProperty Name="leamlbal" ColumnName="leamlbal" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="CIPAdress" ColumnName="CIPAdress" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="totalNoOfDays" ColumnName="totalNoOfDays" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="AttachmentExt" ColumnName="AttachmentExt" />
+          <ScalarProperty Name="LeaveNumerator" ColumnName="LeaveNumerator" />
+          <ScalarProperty Name="LeaveDenominator" ColumnName="LeaveDenominator" />
+          <ScalarProperty Name="LeaveTransBalance" ColumnName="LeaveTransBalance" />
+          <ScalarProperty Name="LeaveTransBalance_Numerator" ColumnName="LeaveTransBalance_Numerator" />
+          <ScalarProperty Name="LeaveTransBalance_Denominator" ColumnName="LeaveTransBalance_Denominator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisempnominees">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisempnominee">
+        <MappingFragment StoreEntitySet="pisempnominee">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="nomtype" ColumnName="nomtype" />
+          <ScalarProperty Name="nomname" ColumnName="nomname" />
+          <ScalarProperty Name="nomrelation" ColumnName="nomrelation" />
+          <ScalarProperty Name="nom_dob" ColumnName="nom_dob" />
+          <ScalarProperty Name="nompercen" ColumnName="nompercen" />
+          <ScalarProperty Name="UID_No" ColumnName="UID_No" />
+          <ScalarProperty Name="nom_bnkAcNo" ColumnName="nom_bnkAcNo" />
+          <ScalarProperty Name="nom_BankName" ColumnName="nom_BankName" />
+          <ScalarProperty Name="nom_BranchName" ColumnName="nom_BranchName" />
+          <ScalarProperty Name="nom_IFSCCode" ColumnName="nom_IFSCCode" />
+          <ScalarProperty Name="nom_minorstatus" ColumnName="nom_minorstatus" />
+          <ScalarProperty Name="nom_guardianDetail" ColumnName="nom_guardianDetail" />
+          <ScalarProperty Name="nomaddress" ColumnName="nomaddress" />
+          <ScalarProperty Name="nomstreetNo" ColumnName="nomstreetNo" />
+          <ScalarProperty Name="nomMh_Vill" ColumnName="nomMh_Vill" />
+          <ScalarProperty Name="nomHouseNo" ColumnName="nomHouseNo" />
+          <ScalarProperty Name="nomWardNo" ColumnName="nomWardNo" />
+          <ScalarProperty Name="nomst" ColumnName="nomst" />
+          <ScalarProperty Name="nomdist" ColumnName="nomdist" />
+          <ScalarProperty Name="nomblk" ColumnName="nomblk" />
+          <ScalarProperty Name="nomtown" ColumnName="nomtown" />
+          <ScalarProperty Name="nomPoliceStation" ColumnName="nomPoliceStation" />
+          <ScalarProperty Name="nompincd" ColumnName="nompincd" />
+          <ScalarProperty Name="nommobileno" ColumnName="nommobileno" />
+          <ScalarProperty Name="nomEmail" ColumnName="nomEmail" />
+          <ScalarProperty Name="nomphone" ColumnName="nomphone" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="CIPAdress" ColumnName="CIPAdress" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="main_Alt_Nominee" ColumnName="main_Alt_Nominee" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="AttachmentExt" ColumnName="AttachmentExt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisempprofessionals">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisempprofessional">
+        <MappingFragment StoreEntitySet="pisempprofessional">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="InitialJoiningState" ColumnName="InitialJoiningState" />
+          <ScalarProperty Name="InitialJoiningdeptid" ColumnName="InitialJoiningdeptid" />
+          <ScalarProperty Name="officeid" ColumnName="officeid" />
+          <ScalarProperty Name="appdate" ColumnName="appdate" />
+          <ScalarProperty Name="apporder" ColumnName="apporder" />
+          <ScalarProperty Name="iphjoindt" ColumnName="iphjoindt" />
+          <ScalarProperty Name="iphdesg" ColumnName="iphdesg" />
+          <ScalarProperty Name="iphclass" ColumnName="iphclass" />
+          <ScalarProperty Name="gpfcpftype" ColumnName="gpfcpftype" />
+          <ScalarProperty Name="gpfcpfnumb" ColumnName="gpfcpfnumb" />
+          <ScalarProperty Name="gisnumb" ColumnName="gisnumb" />
+          <ScalarProperty Name="dofretire" ColumnName="dofretire" />
+          <ScalarProperty Name="dofdeath" ColumnName="dofdeath" />
+          <ScalarProperty Name="modeofrec" ColumnName="modeofrec" />
+          <ScalarProperty Name="oldhistory" ColumnName="oldhistory" />
+          <ScalarProperty Name="esalarycd" ColumnName="esalarycd" />
+          <ScalarProperty Name="gazzeted" ColumnName="gazzeted" />
+          <ScalarProperty Name="emptype" ColumnName="emptype" />
+          <ScalarProperty Name="initbaspay" ColumnName="initbaspay" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="cadre_cd" ColumnName="cadre_cd" />
+          <ScalarProperty Name="seniorityyear" ColumnName="seniorityyear" />
+          <ScalarProperty Name="seniorityno" ColumnName="seniorityno" />
+          <ScalarProperty Name="seniorityDivision" ColumnName="seniorityDivision" />
+          <ScalarProperty Name="CIPAdress" ColumnName="CIPAdress" />
+          <ScalarProperty Name="PayCommssion" ColumnName="PayCommssion" />
+          <ScalarProperty Name="PayScale" ColumnName="PayScale" />
+          <ScalarProperty Name="PayBand" ColumnName="PayBand" />
+          <ScalarProperty Name="GradePay" ColumnName="GradePay" />
+          <ScalarProperty Name="ServiceCd" ColumnName="ServiceCd" />
+          <ScalarProperty Name="GradingCd" ColumnName="GradingCd" />
+          <ScalarProperty Name="AppointmentCd" ColumnName="AppointmentCd" />
+          <ScalarProperty Name="AppointingAuthority" ColumnName="AppointingAuthority" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="OfficeName" ColumnName="OfficeName" />
+          <ScalarProperty Name="DesigName" ColumnName="DesigName" />
+          <ScalarProperty Name="StateCadre" ColumnName="StateCadre" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="apporderdate" ColumnName="apporderdate" />
+          <ScalarProperty Name="appconfirmorderdate" ColumnName="appconfirmorderdate" />
+          <ScalarProperty Name="appconfrmorder" ColumnName="appconfrmorder" />
+          <ScalarProperty Name="appconfrmdate" ColumnName="appconfrmdate" />
+          <ScalarProperty Name="ConfrmGovt" ColumnName="ConfrmGovt" />
+          <ScalarProperty Name="GisNumDetail" ColumnName="GisNumDetail" />
+          <ScalarProperty Name="ServiceRegularisationDate" ColumnName="ServiceRegularisationDate" />
+          <ScalarProperty Name="SubDesigId" ColumnName="SubDesigId" />
+          <ScalarProperty Name="SubDesigName" ColumnName="SubDesigName" />
+          <ScalarProperty Name="joiningStatus" ColumnName="joiningStatus" />
+          <ScalarProperty Name="OfficeStateId" ColumnName="OfficeStateId" />
+          <ScalarProperty Name="OfficeDistcd" ColumnName="OfficeDistcd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisemptrainings">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisemptraining">
+        <MappingFragment StoreEntitySet="pisemptraining">
+          <ScalarProperty Name="transid" ColumnName="transid" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="trngtype" ColumnName="trngtype" />
+          <ScalarProperty Name="trngtopic" ColumnName="trngtopic" />
+          <ScalarProperty Name="trnginstitute" ColumnName="trnginstitute" />
+          <ScalarProperty Name="trngsponsor" ColumnName="trngsponsor" />
+          <ScalarProperty Name="trngdtfrom" ColumnName="trngdtfrom" />
+          <ScalarProperty Name="trngdtto" ColumnName="trngdtto" />
+          <ScalarProperty Name="trnpalce" ColumnName="trnpalce" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="CIPAdress" ColumnName="CIPAdress" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pisloandetails">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pisloandetail">
+        <MappingFragment StoreEntitySet="pisloandetail">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="uniqid" ColumnName="uniqid" />
+          <ScalarProperty Name="loantype" ColumnName="loantype" />
+          <ScalarProperty Name="loanactno" ColumnName="loanactno" />
+          <ScalarProperty Name="letterno" ColumnName="letterno" />
+          <ScalarProperty Name="sancdate" ColumnName="sancdate" />
+          <ScalarProperty Name="sancamount" ColumnName="sancamount" />
+          <ScalarProperty Name="retdate" ColumnName="retdate" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="Updation_Date" ColumnName="Updation_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="CIPAdress" ColumnName="CIPAdress" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pistransferlists">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pistransferlist">
+        <MappingFragment StoreEntitySet="pistransferlist">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="listid" ColumnName="listid" />
+          <ScalarProperty Name="listnm" ColumnName="listnm" />
+          <ScalarProperty Name="userofficeid" ColumnName="userofficeid" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="orderno" ColumnName="orderno" />
+          <ScalarProperty Name="orderdt" ColumnName="orderdt" />
+          <ScalarProperty Name="Listtitle" ColumnName="Listtitle" />
+          <ScalarProperty Name="updation_Date" ColumnName="updation_Date" />
+          <ScalarProperty Name="updated_By" ColumnName="updated_By" />
+          <ScalarProperty Name="verified" ColumnName="verified" />
+          <ScalarProperty Name="verification_Date" ColumnName="verification_Date" />
+          <ScalarProperty Name="verified_By" ColumnName="verified_By" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="trfprom" ColumnName="trfprom" />
+          <ScalarProperty Name="copytotxt" ColumnName="copytotxt" />
+          <ScalarProperty Name="authority_code" ColumnName="authority_code" />
+          <ScalarProperty Name="filenumber" ColumnName="filenumber" />
+          <ScalarProperty Name="txtattop" ColumnName="txtattop" />
+          <ScalarProperty Name="txtatmiddle" ColumnName="txtatmiddle" />
+          <ScalarProperty Name="authorisedpmiscd_sign" ColumnName="authorisedpmiscd_sign" />
+          <ScalarProperty Name="authorisedpmis_name" ColumnName="authorisedpmis_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pistransferorderauthorities">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pistransferorderauthority">
+        <MappingFragment StoreEntitySet="pistransferorderauthority">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="Deptid" ColumnName="Deptid" />
+          <ScalarProperty Name="Authority_code" ColumnName="Authority_code" />
+          <ScalarProperty Name="Authority_desc" ColumnName="Authority_desc" />
+          <ScalarProperty Name="Authority_desc_local" ColumnName="Authority_desc_local" />
+          <ScalarProperty Name="Authority_address" ColumnName="Authority_address" />
+          <ScalarProperty Name="Authority_address_local" ColumnName="Authority_address_local" />
+          <ScalarProperty Name="DeUserId" ColumnName="DeUserId" />
+          <ScalarProperty Name="Dedate" ColumnName="Dedate" />
+          <ScalarProperty Name="IpAdress" ColumnName="IpAdress" />
+          <ScalarProperty Name="LockedStatus" ColumnName="LockedStatus" />
+          <ScalarProperty Name="dis_code" ColumnName="dis_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="msubqualis">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.msubquali">
+        <MappingFragment StoreEntitySet="msubquali">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="subcode" ColumnName="subcode" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ncocode" ColumnName="ncocode" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdationDate" ColumnName="UpdationDate" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="msubquali_29_Dec_2020">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.msubquali_29_Dec_2020">
+        <MappingFragment StoreEntitySet="msubquali_29_Dec_2020">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="subcode" ColumnName="subcode" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ncocode" ColumnName="ncocode" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdationDate" ColumnName="UpdationDate" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pistransferemplists">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.pistransferemplist">
+        <MappingFragment StoreEntitySet="pistransferemplist">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="listid" ColumnName="listid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="trandeptid" ColumnName="trandeptid" />
+          <ScalarProperty Name="trnofficeid" ColumnName="trnofficeid" />
+          <ScalarProperty Name="trnbranchcd" ColumnName="trnbranchcd" />
+          <ScalarProperty Name="trntodesig" ColumnName="trntodesig" />
+          <ScalarProperty Name="trntosubdesig" ColumnName="trntosubdesig" />
+          <ScalarProperty Name="trnfromDept" ColumnName="trnfromDept" />
+          <ScalarProperty Name="trnfromoff" ColumnName="trnfromoff" />
+          <ScalarProperty Name="trnfrombranchcd" ColumnName="trnfrombranchcd" />
+          <ScalarProperty Name="trnfromdesig" ColumnName="trnfromdesig" />
+          <ScalarProperty Name="trnfromsubdesig" ColumnName="trnfromsubdesig" />
+          <ScalarProperty Name="dofvalid" ColumnName="dofvalid" />
+          <ScalarProperty Name="trnremarks" ColumnName="trnremarks" />
+          <ScalarProperty Name="useridde" ColumnName="useridde" />
+          <ScalarProperty Name="dofentry" ColumnName="dofentry" />
+          <ScalarProperty Name="useridvalid" ColumnName="useridvalid" />
+          <ScalarProperty Name="joindt" ColumnName="joindt" />
+          <ScalarProperty Name="relievedt" ColumnName="relievedt" />
+          <ScalarProperty Name="canceldt" ColumnName="canceldt" />
+          <ScalarProperty Name="prevjoindt" ColumnName="prevjoindt" />
+          <ScalarProperty Name="prevsenno" ColumnName="prevsenno" />
+          <ScalarProperty Name="vipnotedetail" ColumnName="vipnotedetail" />
+          <ScalarProperty Name="cmrefno" ColumnName="cmrefno" />
+          <ScalarProperty Name="withtta" ColumnName="withtta" />
+          <ScalarProperty Name="withjointime" ColumnName="withjointime" />
+          <ScalarProperty Name="PayCommision" ColumnName="PayCommision" />
+          <ScalarProperty Name="PayScale" ColumnName="PayScale" />
+          <ScalarProperty Name="PayBand" ColumnName="PayBand" />
+          <ScalarProperty Name="GradePay" ColumnName="GradePay" />
+          <ScalarProperty Name="BasicPay" ColumnName="BasicPay" />
+          <ScalarProperty Name="IncrementDate" ColumnName="IncrementDate" />
+          <ScalarProperty Name="EmpEstDept" ColumnName="EmpEstDept" />
+          <ScalarProperty Name="EmpEstOffice" ColumnName="EmpEstOffice" />
+          <ScalarProperty Name="EmpJoinEstDept" ColumnName="EmpJoinEstDept" />
+          <ScalarProperty Name="EmpJoinEstOffice" ColumnName="EmpJoinEstOffice" />
+          <ScalarProperty Name="JoinId" ColumnName="JoinId" />
+          <ScalarProperty Name="ReleiveId" ColumnName="ReleiveId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromotionDetails">
+      <EntityTypeMapping TypeName="ehrmsupLocalModel.PromotionDetail">
+        <MappingFragment StoreEntitySet="PromotionDetails">
+          <ScalarProperty Name="pID" ColumnName="pID" />
+          <ScalarProperty Name="deptid" ColumnName="deptid" />
+          <ScalarProperty Name="empcd" ColumnName="empcd" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="PromotionDate" ColumnName="PromotionDate" />
+          <ScalarProperty Name="HeadDeptID" ColumnName="HeadDeptID" />
+          <ScalarProperty Name="pdeptid" ColumnName="pdeptid" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="distcd" ColumnName="distcd" />
+          <ScalarProperty Name="officeid" ColumnName="officeid" />
+          <ScalarProperty Name="ServiceCd" ColumnName="ServiceCd" />
+          <ScalarProperty Name="GradingCd" ColumnName="GradingCd" />
+          <ScalarProperty Name="desigcode" ColumnName="desigcode" />
+          <ScalarProperty Name="subdesigcode" ColumnName="subdesigcode" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="PayCommision" ColumnName="PayCommision" />
+          <ScalarProperty Name="PayScale" ColumnName="PayScale" />
+          <ScalarProperty Name="PayBand" ColumnName="PayBand" />
+          <ScalarProperty Name="GradePay" ColumnName="GradePay" />
+          <ScalarProperty Name="PayScaleDate" ColumnName="PayScaleDate" />
+          <ScalarProperty Name="postingDept" ColumnName="postingDept" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedIP" ColumnName="CreatedIP" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedIP" ColumnName="UpdatedIP" />
+          <ScalarProperty Name="To_Verify" ColumnName="To_Verify" />
+          <ScalarProperty Name="To_VerifyDate" ColumnName="To_VerifyDate" />
+          <ScalarProperty Name="Verified_By" ColumnName="Verified_By" />
+          <ScalarProperty Name="Verified_ByDate" ColumnName="Verified_ByDate" />
+          <ScalarProperty Name="VerifyGroupId" ColumnName="VerifyGroupId" />
+          <ScalarProperty Name="Verify" ColumnName="Verify" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,206 @@
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\WebAPI_Combined.dll.config
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\WebAPI_Combined.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\WebAPI_Combined.pdb
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csc.exe
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csc.exe.config
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csc.rsp
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csi.exe
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csi.exe.config
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csi.rsp
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.AppContext.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Console.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.IO.Compression.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Net.Http.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Net.Sockets.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.ValueTuple.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Xml.XPath.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\vbc.exe
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\vbc.exe.config
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\vbc.rsp
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\VBCSCompiler.exe
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\EntityFramework.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\EntityFramework.SqlServer.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Net.Http.Formatting.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Helpers.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.WebHost.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Mvc.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Razor.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.Deployment.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.Razor.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\EntityFramework.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\EntityFramework.SqlServer.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Razor.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.Deployment.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.Razor.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Helpers.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Mvc.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Net.Http.Formatting.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.WebHost.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.csproj.AssemblyReference.cache
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.csproj.CoreCompileInputs.cache
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.csproj.CopyComplete
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.pdb
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.Bson.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Buffers.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Memory.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Numerics.Vectors.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Cors.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.Cors.dll
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.Bson.pdb
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.Bson.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Buffers.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Memory.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Numerics.Vectors.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\1sssh\source\repos\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.Cors.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\WebAPI_Combined.dll.config
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\WebAPI_Combined.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\WebAPI_Combined.pdb
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csc.exe
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csc.exe.config
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csc.rsp
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csi.exe
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csi.exe.config
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\csi.rsp
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.Managed.Core.targets
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.AppContext.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Collections.Immutable.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Console.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Globalization.Calendars.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.IO.Compression.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.IO.FileSystem.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Net.Http.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Net.Sockets.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Reflection.Metadata.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.ValueTuple.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Xml.XmlDocument.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Xml.XPath.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\vbc.exe
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\vbc.exe.config
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\vbc.rsp
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\VBCSCompiler.exe
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\roslyn\VBCSCompiler.exe.config
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Aleph1.Security.Contracts.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Aleph1.Security.Implementation.RijndaelManaged.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Configuration.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Cryptography.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\EntityFramework.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\EntityFramework.SqlServer.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Microsoft.Web.Infrastructure.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.Bson.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Buffers.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Memory.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Net.Http.Formatting.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Numerics.Vectors.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Runtime.CompilerServices.Unsafe.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Threading.Tasks.Extensions.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Cors.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Helpers.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.Cors.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.WebHost.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Mvc.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Razor.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.Deployment.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.Razor.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Aleph1.Security.Contracts.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Aleph1.Security.Implementation.RijndaelManaged.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\EntityFramework.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\EntityFramework.SqlServer.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.Bson.pdb
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Newtonsoft.Json.Bson.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Buffers.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Memory.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Net.Http.Formatting.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Numerics.Vectors.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Runtime.CompilerServices.Unsafe.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Threading.Tasks.Extensions.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.Cors.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Http.WebHost.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Razor.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.Deployment.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Webpages.Razor.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Helpers.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\System.Web.Mvc.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.csproj.AssemblyReference.cache
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.csproj.CoreCompileInputs.cache
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.csproj.CopyComplete
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.dll
+G:\APP DEVELOPMENT\API\VERY IMPORTANT\WebAPI_Combined\WebAPI_Combined\obj\Debug\WebAPI_Combined.pdb

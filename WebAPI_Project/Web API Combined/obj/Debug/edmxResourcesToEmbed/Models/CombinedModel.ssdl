@@ -1,0 +1,1552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ehrmsupLocalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EmpLeaveHistory">
+    <Key>
+      <PropertyRef Name="EmpLeaveHistID" />
+    </Key>
+    <Property Name="EmpLeaveHistID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="DeptID" Type="char" MaxLength="7" />
+    <Property Name="OfficeID" Type="bigint" Nullable="false" />
+    <Property Name="EmpCode" Type="varchar" MaxLength="15" />
+    <Property Name="FinancialYear" Type="varchar" MaxLength="7" />
+    <Property Name="LeaveTypeID" Type="int" Nullable="false" />
+    <Property Name="LeaveRefID" Type="varchar" MaxLength="30" />
+    <Property Name="FromDate" Type="datetime" Nullable="false" />
+    <Property Name="StartDayHalf" Type="char" MaxLength="1" />
+    <Property Name="ToDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDayHalf" Type="char" MaxLength="1" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="1200" />
+    <Property Name="AppliedOn" Type="datetime" Nullable="false" />
+    <Property Name="AddressDuringLeave" Type="nvarchar" MaxLength="800" />
+    <Property Name="VerifiedBy" Type="varchar" MaxLength="20" />
+    <Property Name="VerifiedOn" Type="datetime" />
+    <Property Name="LeaveStatusID" Type="int" Nullable="false" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="TotalDays" Type="float" Nullable="false" />
+    <Property Name="ReportingOfficerID" Type="varchar" MaxLength="15" />
+    <Property Name="CommentsByReportingOfficer" Type="nvarchar" MaxLength="800" />
+    <Property Name="ltcavail" Type="char" MaxLength="1" />
+    <Property Name="ltcYear" Type="char" MaxLength="4" />
+    <Property Name="StationLeave" Type="char" MaxLength="1" />
+    <Property Name="DaysSuffixOrPrefix" Type="nvarchar" MaxLength="800" />
+    <Property Name="LeaveAttachment" Type="varbinary(max)" />
+    <Property Name="AttachmentExt" Type="varchar" MaxLength="10" />
+    <Property Name="LeaveExtension" Type="char" MaxLength="1" />
+    <Property Name="ExtendedLeaveHistoryID" Type="int" />
+    <Property Name="LeaveExtensionDate" Type="datetime" />
+    <Property Name="CancelAfterApproval" Type="char" MaxLength="1" />
+    <Property Name="CancellationRequestDate" Type="datetime" />
+    <Property Name="EarlyJoiningRequest" Type="char" MaxLength="1" />
+    <Property Name="EarlyJoinedLeaveHistID" Type="int" />
+    <Property Name="LeaveYear" Type="int" Nullable="false" />
+    <Property Name="IsLeaveExtended" Type="char" MaxLength="1" />
+    <Property Name="IsForwarded" Type="char" MaxLength="1" />
+    <Property Name="FromApp" Type="char" MaxLength="1" />
+    <Property Name="CancelReason_AfterApproval" Type="nvarchar" MaxLength="800" />
+    <Property Name="RptOfficerRemarks_AfterApproval" Type="nvarchar" MaxLength="800" />
+    <Property Name="OrderPublished" Type="char" MaxLength="1" />
+    <Property Name="LTCID" Type="bigint" />
+    <Property Name="CombinedLeaveTypeID" Type="int" />
+    <Property Name="CombinedFromDate" Type="datetime" />
+    <Property Name="CombinedStartDayHalf" Type="char" MaxLength="1" />
+    <Property Name="CombinedToDate" Type="datetime" />
+    <Property Name="CombinedEndDayHalf" Type="char" MaxLength="1" />
+    <Property Name="CombinedTotalDays" Type="float" />
+    <Property Name="SLCLTypes" Type="nchar" MaxLength="4" />
+    <Property Name="LeaveTransBalance" Type="varchar" MaxLength="10" />
+    <Property Name="LeaveTransBalance_Numerator" Type="varchar" MaxLength="5" />
+    <Property Name="LeaveTransBalance_Denominator" Type="varchar" MaxLength="5" />
+    <Property Name="CombinedLeaveTransBalance" Type="varchar" MaxLength="10" />
+    <Property Name="CombinedLeaveTransBalance_Numerator" Type="varchar" MaxLength="5" />
+    <Property Name="CombinedLeaveTransBalance_Denominator" Type="varchar" MaxLength="5" />
+    <Property Name="SelfCancelAfterApproval" Type="char" MaxLength="1" />
+    <Property Name="SelfCancelAfterApprovalOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="emppersonal">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+    </Key>
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="transid" Type="bigint" />
+    <Property Name="officeid" Type="bigint" />
+    <Property Name="EmpNameTitle" Type="nvarchar" MaxLength="40" />
+    <Property Name="empfname" Type="nvarchar" MaxLength="200" />
+    <Property Name="empmname" Type="nvarchar" MaxLength="200" />
+    <Property Name="emplname" Type="nvarchar" MaxLength="200" />
+    <Property Name="empnamelocal" Type="nvarchar" MaxLength="400" />
+    <Property Name="empname_mlocal" Type="nvarchar" MaxLength="200" />
+    <Property Name="empname_Llocal" Type="nvarchar" MaxLength="200" />
+    <Property Name="empdob" Type="smalldatetime" />
+    <Property Name="empfmh" Type="char" MaxLength="1" />
+    <Property Name="empfmhname" Type="nvarchar" MaxLength="400" />
+    <Property Name="empfhm_mname" Type="nvarchar" MaxLength="200" />
+    <Property Name="empfhm_lname" Type="nvarchar" MaxLength="200" />
+    <Property Name="empmarst" Type="char" MaxLength="1" />
+    <Property Name="empspouse" Type="varchar" MaxLength="50" />
+    <Property Name="empidmasrk" Type="nvarchar" MaxLength="4000" />
+    <Property Name="empcaste" Type="nvarchar" MaxLength="400" />
+    <Property Name="empreligion" Type="char" MaxLength="1" />
+    <Property Name="empcategory" Type="char" MaxLength="4" />
+    <Property Name="emphmst" Type="char" MaxLength="2" />
+    <Property Name="emphmdist" Type="char" MaxLength="3" />
+    <Property Name="emphmtown" Type="nvarchar" MaxLength="4000" />
+    <Property Name="esalarycd" Type="nvarchar" MaxLength="80" />
+    <Property Name="emphomeoff" Type="varchar" MaxLength="12" />
+    <Property Name="empmedcer" Type="char" MaxLength="1" />
+    <Property Name="empcharcer" Type="char" MaxLength="1" />
+    <Property Name="empphoto" Type="image" />
+    <Property Name="empfinger" Type="image" />
+    <Property Name="emprail" Type="nvarchar" MaxLength="2000" />
+    <Property Name="empremark" Type="nvarchar" MaxLength="4000" />
+    <Property Name="empgender" Type="char" MaxLength="1" />
+    <Property Name="empblood" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="empheight" Type="char" MaxLength="5" />
+    <Property Name="currdesig" Type="char" MaxLength="10" />
+    <Property Name="Subdesig_OLD" Type="char" MaxLength="4" />
+    <Property Name="nextincrement" Type="smalldatetime" />
+    <Property Name="doeoffdesigincre" Type="smalldatetime" />
+    <Property Name="cadre_cd" Type="int" />
+    <Property Name="branchcd" Type="int" />
+    <Property Name="postdeptid" Type="char" MaxLength="7" />
+    <Property Name="desigdescription" Type="nvarchar" MaxLength="400" />
+    <Property Name="estabdeptid" Type="char" MaxLength="7" />
+    <Property Name="estabofficeid" Type="bigint" />
+    <Property Name="policepinno" Type="char" MaxLength="8" />
+    <Property Name="dofjoin" Type="smalldatetime" />
+    <Property Name="dofretirecurr" Type="smalldatetime" />
+    <Property Name="modeofreccurr" Type="char" MaxLength="4" />
+    <Property Name="emptypecurr" Type="char" MaxLength="4" />
+    <Property Name="EmpProertyFileId" Type="int" />
+    <Property Name="UID" Type="nvarchar" MaxLength="512" />
+    <Property Name="ServiceCd" Type="int" />
+    <Property Name="GradingCd" Type="int" />
+    <Property Name="AppointmentCd" Type="int" />
+    <Property Name="StateCadre" Type="char" MaxLength="3" />
+    <Property Name="currentclass" Type="char" MaxLength="1" />
+    <Property Name="Gazetted" Type="char" MaxLength="1" />
+    <Property Name="DEuserid" Type="varchar" MaxLength="50" />
+    <Property Name="DEdate" Type="smalldatetime" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="20" />
+    <Property Name="UpdatedDate" Type="smalldatetime" />
+    <Property Name="verify" Type="nvarchar" MaxLength="4" />
+    <Property Name="VerifiedBy" Type="nvarchar" MaxLength="80" />
+    <Property Name="VerifiedDate" Type="datetime" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="IpAddress" Type="varchar" MaxLength="20" />
+    <Property Name="VALIDuserid" Type="char" MaxLength="20" />
+    <Property Name="stgpfcpstype" Type="char" MaxLength="1" />
+    <Property Name="gpfcpsnumber" Type="nvarchar" MaxLength="200" />
+    <Property Name="PayCommision" Type="varchar" MaxLength="10" />
+    <Property Name="PayScale" Type="varchar" MaxLength="10" />
+    <Property Name="PayBand" Type="varchar" MaxLength="10" />
+    <Property Name="GradePay" Type="varchar" MaxLength="10" />
+    <Property Name="BasicPay" Type="varchar" MaxLength="10" />
+    <Property Name="employeeexit" Type="char" MaxLength="1" />
+    <Property Name="Nationality" Type="char" MaxLength="2" />
+    <Property Name="SubCategory" Type="varchar" MaxLength="4" />
+    <Property Name="departmentalEmpCode" Type="varchar" MaxLength="20" />
+    <Property Name="parentdeptid" Type="char" MaxLength="7" />
+    <Property Name="TempEmpcd" Type="char" MaxLength="10" />
+    <Property Name="HealthStatusId" Type="smallint" />
+    <Property Name="mainestabofficeid" Type="bigint" />
+    <Property Name="Parentofficeid" Type="bigint" />
+    <Property Name="distcd" Type="smallint" />
+    <Property Name="AppointmentDt" Type="smalldatetime" />
+    <Property Name="ServiceJoiningDt" Type="smalldatetime" />
+    <Property Name="SeniorityNo" Type="char" MaxLength="20" />
+    <Property Name="joiningorder" Type="nvarchar" MaxLength="100" />
+    <Property Name="joiningorderdate" Type="smalldatetime" />
+    <Property Name="SpecialityId" Type="int" />
+    <Property Name="Subdesig" Type="int" />
+    <Property Name="CouncilRegistrationNo" Type="nvarchar" MaxLength="40" />
+    <Property Name="CouncilRegistrationDt" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="mAwardDetail">
+    <Key>
+      <PropertyRef Name="award_Id" />
+    </Key>
+    <Property Name="award_Id" Type="int" Nullable="false" />
+    <Property Name="award_Name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="mBloodGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="mBloodGroupMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="BloodGpId" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="BloodGpId" Type="int" Nullable="false" />
+    <Property Name="BloodGpName_eng" Type="nvarchar" MaxLength="100" />
+    <Property Name="BloodGpName_local" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mbranchMaster">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="officeid" />
+      <PropertyRef Name="branchcd" />
+    </Key>
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="officeid" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="branchcd" Type="int" Nullable="false" />
+    <Property Name="branchnm" Type="varchar" MaxLength="200" />
+    <Property Name="branchname_Local" Type="nvarchar" MaxLength="400" />
+    <Property Name="DEUserId" Type="varchar" MaxLength="15" />
+    <Property Name="DEDate" Type="smalldatetime" />
+    <Property Name="CIPAdd" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mCategoryMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="StateId" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="200" />
+    <Property Name="CategoryName_local" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mClassMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="LocalName" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="mdeptmaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="deptid" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="deptabbr" Type="varchar" MaxLength="5" />
+    <Property Name="deptname" Type="nvarchar" MaxLength="300" />
+    <Property Name="deptname_hindi" Type="nvarchar" MaxLength="300" />
+    <Property Name="deptphoto" Type="image" />
+    <Property Name="DeptConStr" Type="nvarchar" MaxLength="400" />
+    <Property Name="GriNumber" Type="bigint" />
+    <Property Name="GriNumberUpdationDate" Type="smalldatetime" />
+    <Property Name="LatestGriNumber" Type="nvarchar" MaxLength="40" />
+    <Property Name="enivaran" Type="char" MaxLength="1" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="eSamadhanNote" Type="char" MaxLength="1" />
+    <Property Name="eSamadhanOnline" Type="char" MaxLength="1" />
+    <Property Name="eSameekshaOnlineYN" Type="nvarchar" MaxLength="2" />
+    <Property Name="eSameekshaWorkCode" Type="int" />
+    <Property Name="deptabbrLocal" Type="nvarchar" MaxLength="100" />
+    <Property Name="eSameekshaWorkCodeYear" Type="nvarchar" MaxLength="8" />
+    <Property Name="DEUserId" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEDate" Type="datetime" Nullable="false" />
+    <Property Name="CIPAdd" Type="nvarchar" MaxLength="40" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="EntityType" Type="char" MaxLength="2" />
+    <Property Name="estimatedStrength" Type="varchar" MaxLength="10" />
+    <Property Name="HeadDeptID" Type="smallint" />
+    <Property Name="HeadDeptName" Type="nvarchar" MaxLength="300" />
+    <Property Name="HeadDeptName_Local" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="mdesigmast">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="desigcode" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="desigcode" Type="int" Nullable="false" />
+    <Property Name="designame" Type="nvarchar" MaxLength="400" />
+    <Property Name="designame_Local" Type="nvarchar" MaxLength="400" />
+    <Property Name="desigabbr" Type="char" MaxLength="10" />
+    <Property Name="DEUserId" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEDate" Type="datetime" Nullable="false" />
+    <Property Name="CIPAdd" Type="nvarchar" MaxLength="40" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="RetirementAge" Type="char" MaxLength="2" />
+    <Property Name="gazetted" Type="char" MaxLength="1" />
+    <Property Name="PayScaleGrade" Type="varchar" MaxLength="100" />
+    <Property Name="displayOrder" Type="char" MaxLength="5" />
+    <Property Name="DesigGroup" Type="char" MaxLength="4" />
+    <Property Name="DesigClass" Type="char" MaxLength="4" />
+    <Property Name="Status_Use" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mFWblkmas">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="dis_code" />
+      <PropertyRef Name="blk_code" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="dis_code" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="blk_code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="blk_name" Type="varchar" MaxLength="50" />
+    <Property Name="blk_nameh" Type="nvarchar" MaxLength="100" />
+    <Property Name="blk_type" Type="char" MaxLength="1" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mFWdismas">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="dis_code" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="dis_code" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="StateAbbr" Type="char" MaxLength="2" />
+    <Property Name="dis_name" Type="varchar" MaxLength="50" />
+    <Property Name="dis_namh" Type="nvarchar" MaxLength="100" />
+    <Property Name="tribal_nontribal" Type="char" MaxLength="1" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="DistrictClass" Type="char" MaxLength="1" />
+    <Property Name="DivisionCode" Type="int" />
+  </EntityType>
+  <EntityType Name="mFWpanmas">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="dis_code" />
+      <PropertyRef Name="pan_code" />
+      <PropertyRef Name="blk_code" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="dis_code" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="pan_code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="blk_code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pan_name" Type="varchar" MaxLength="50" />
+    <Property Name="pan_nameh" Type="nvarchar" MaxLength="100" />
+    <Property Name="pan_type" Type="char" MaxLength="1" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mLeaveTypes">
+    <Key>
+      <PropertyRef Name="LeaveTypeID" />
+    </Key>
+    <Property Name="LeaveTypeID" Type="int" Nullable="false" />
+    <Property Name="LeaveTypeName" Type="nvarchar" MaxLength="400" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="DisplayOrder" Type="int" Nullable="false" />
+    <Property Name="ForWomenOnly" Type="char" MaxLength="1" />
+    <Property Name="AutoCreditable" Type="char" MaxLength="1" />
+    <Property Name="ForMenOnly" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mLoanType">
+    <Key>
+      <PropertyRef Name="LoanId" />
+    </Key>
+    <Property Name="LoanId" Type="int" Nullable="false" />
+    <Property Name="LoanName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="mMaritalStatus">
+    <Key>
+      <PropertyRef Name="MaritalId" />
+    </Key>
+    <Property Name="MaritalId" Type="int" Nullable="false" />
+    <Property Name="MaritalName" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="mMaritalStatusMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="MaritalStatusId" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="MaritalStatusId" Type="int" Nullable="false" />
+    <Property Name="MaritalStatus_eng" Type="nvarchar" MaxLength="200" />
+    <Property Name="MaritalStatus_local" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="NotApplicable_forMaritalBasedLeave" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mOfficeLevel">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="officelevel" />
+      <PropertyRef Name="deptid" />
+    </Key>
+    <Property Name="StateId" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="officelevel" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="officetype" Type="nvarchar" MaxLength="200" />
+    <Property Name="officetylocal" Type="nvarchar" MaxLength="200" />
+    <Property Name="status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mofficemaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="officeid" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="officeid" Type="bigint" Nullable="false" />
+    <Property Name="officelevel" Type="varchar" MaxLength="2" />
+    <Property Name="officename" Type="nvarchar" MaxLength="1000" />
+    <Property Name="officeaddr" Type="nvarchar" MaxLength="2000" />
+    <Property Name="distcd" Type="char" MaxLength="3" />
+    <Property Name="urbrul" Type="char" MaxLength="1" />
+    <Property Name="tehsilcode" Type="varchar" MaxLength="10" />
+    <Property Name="blockcd" Type="varchar" MaxLength="10" />
+    <Property Name="panchcd" Type="varchar" MaxLength="10" />
+    <Property Name="concd" Type="char" MaxLength="10" />
+    <Property Name="desigcode" Type="varchar" MaxLength="4" />
+    <Property Name="reportoffice" Type="bigint" />
+    <Property Name="EmailId" Type="varchar" MaxLength="100" />
+    <Property Name="Wh_SSt" Type="char" MaxLength="1" />
+    <Property Name="officenamelocal" Type="nvarchar" MaxLength="1000" />
+    <Property Name="officeaddresslocal" Type="nvarchar" MaxLength="2000" />
+    <Property Name="NodalOfficerEmpCode" Type="char" MaxLength="5" />
+    <Property Name="grcellincharge" Type="char" MaxLength="5" />
+    <Property Name="IsOnline" Type="tinyint" />
+    <Property Name="isgrcell" Type="tinyint" />
+    <Property Name="grcellinchargedeptid" Type="char" MaxLength="7" />
+    <Property Name="DEuserid" Type="char" MaxLength="12" />
+    <Property Name="DEdate" Type="smalldatetime" />
+    <Property Name="CIPAdd" Type="nvarchar" MaxLength="40" />
+    <Property Name="officephone" Type="char" MaxLength="20" />
+    <Property Name="GenOffice" Type="nvarchar" MaxLength="2" />
+    <Property Name="mapoldofficeid" Type="char" MaxLength="12" />
+    <Property Name="mapnewofficeid" Type="char" MaxLength="12" />
+    <Property Name="officetype" Type="char" MaxLength="2" />
+    <Property Name="tribalAreaCode" Type="nvarchar" MaxLength="4" />
+    <Property Name="ddodemandcd" Type="nvarchar" MaxLength="20" />
+    <Property Name="treasurycd" Type="nvarchar" MaxLength="20" />
+    <Property Name="mobilenumber" Type="nvarchar" MaxLength="22" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="attachedoffice" Type="char" MaxLength="1" />
+    <Property Name="OfficeState" Type="char" MaxLength="4" />
+    <Property Name="Longitude" Type="varchar" MaxLength="20" />
+    <Property Name="Latitude" Type="varchar" MaxLength="20" />
+    <Property Name="DepartmentalOfficeCode" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="mofficemasterForReports">
+    <Key>
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="officeid" />
+    </Key>
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="deptname" Type="nvarchar" MaxLength="300" />
+    <Property Name="officeid" Type="bigint" Nullable="false" />
+    <Property Name="officelevel" Type="varchar" MaxLength="3" />
+    <Property Name="officename" Type="nvarchar" MaxLength="1000" />
+    <Property Name="reportofficeid" Type="bigint" />
+    <Property Name="reportofficename" Type="nvarchar" MaxLength="1000" />
+    <Property Name="OfficeState" Type="char" MaxLength="4" />
+    <Property Name="distcd" Type="char" MaxLength="3" />
+    <Property Name="dis_name" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="mOfficeType">
+    <Key>
+      <PropertyRef Name="DeptId" />
+      <PropertyRef Name="OfficeTypeName" />
+    </Key>
+    <Property Name="DeptId" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="OfficetypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OfficeTypeName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="OfficeTypeName_Local" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="mOrderType">
+    <Key>
+      <PropertyRef Name="OrderType" />
+      <PropertyRef Name="StateID" />
+    </Key>
+    <Property Name="OrderType" Type="int" Nullable="false" />
+    <Property Name="OrderName" Type="nvarchar" MaxLength="200" />
+    <Property Name="OrderDescription" Type="nvarchar" MaxLength="4000" />
+    <Property Name="OrderBehaviour" Type="char" MaxLength="2" />
+    <Property Name="StateID" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="EntryBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="EntryDate" Type="smalldatetime" />
+    <Property Name="IpAddress" Type="varchar" MaxLength="20" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="Entry_Type" Type="char" MaxLength="1" />
+    <Property Name="EmployeeExit" Type="char" MaxLength="1" />
+    <Property Name="EmployeeStatus" Type="varchar" MaxLength="50" />
+    <Property Name="EmployeeStatusKey" Type="tinyint" />
+    <Property Name="FinancialChngFlag" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mpiscadremast">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="Cadre_cd" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="Cadre_cd" Type="int" Nullable="false" />
+    <Property Name="Cadre_nm" Type="varchar" MaxLength="100" />
+    <Property Name="cadre_abbr" Type="varchar" MaxLength="10" />
+    <Property Name="deptid" Type="char" MaxLength="7" />
+    <Property Name="Cadre_nmLocal" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mpisemptype">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="emp_type" />
+    </Key>
+    <Property Name="StateId" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="emp_type" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="emp_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Empname_local" Type="nvarchar" MaxLength="20" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mquali">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="ncocode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Id" Type="int" />
+    <Property Name="qualilevel" Type="int" />
+  </EntityType>
+  <EntityType Name="mquali_29_Dec_2020">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="ncocode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Id" Type="int" />
+  </EntityType>
+  <EntityType Name="mqualilevel">
+    <Key>
+      <PropertyRef Name="StdName" />
+    </Key>
+    <Property Name="StdId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StdName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="StdName_Local" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mRelationMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="RelationId" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="RelationId" Type="int" Nullable="false" />
+    <Property Name="RelationName_eng" Type="nvarchar" MaxLength="200" />
+    <Property Name="RelationName_local" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="Applicable_ForCCL" Type="char" MaxLength="1" />
+    <Property Name="Applicable_ForMaritalStatus" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mReligionTypeMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="ReligionId" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="ReligionId" Type="int" Nullable="false" />
+    <Property Name="ReligionName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ReligionName_local" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mState">
+    <Key>
+      <PropertyRef Name="StateID" />
+    </Key>
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="200" />
+    <Property Name="StateName_Local" Type="nvarchar" MaxLength="200" />
+    <Property Name="StateAbbr" Type="char" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="mstatemaster">
+    <Key>
+      <PropertyRef Name="StateID" />
+    </Key>
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="200" />
+    <Property Name="StateName_Local" Type="nvarchar" MaxLength="200" />
+    <Property Name="StateAbbr" Type="char" MaxLength="2" />
+    <Property Name="CultureCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="CultureName" Type="nvarchar" MaxLength="200" />
+    <Property Name="StateName_Culture" Type="nvarchar" MaxLength="2000" />
+    <Property Name="LanguagePreferences" Type="char" MaxLength="2" />
+    <Property Name="StateMinisType" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mStateServiceGradingMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="ServiceCd" />
+      <PropertyRef Name="GradingCd" />
+    </Key>
+    <Property Name="StateId" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="ServiceCd" Type="int" Nullable="false" />
+    <Property Name="GradingCd" Type="int" Nullable="false" />
+    <Property Name="GradingName" Type="varchar" MaxLength="100" />
+    <Property Name="GradingName_Local" Type="nvarchar" MaxLength="200" />
+    <Property Name="DeUserId" Type="varchar" MaxLength="20" />
+    <Property Name="DeDate" Type="smalldatetime" />
+    <Property Name="IpAddress" Type="varchar" MaxLength="40" />
+    <Property Name="LockedStatus" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mStateServiceMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="Deptid" />
+      <PropertyRef Name="ServiceCd" />
+    </Key>
+    <Property Name="StateId" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="Deptid" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="ServiceCd" Type="int" Nullable="false" />
+    <Property Name="ServiceName" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ServiceName_Local" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ServiceAbbr" Type="char" MaxLength="3" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="UpdatedDate" Type="smalldatetime" />
+    <Property Name="IpAddress" Type="varchar" MaxLength="20" />
+    <Property Name="LockedStatus" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="mSubCategoryMaster">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="SubCatId" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="SubCatId" Type="int" Nullable="false" />
+    <Property Name="SubCatName" Type="nvarchar" MaxLength="200" />
+    <Property Name="SubCatName_local" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ehrmsupLocal.dbo.msubquali' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="msubquali">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="int" Nullable="false" />
+    <Property Name="subcode" Type="char" MaxLength="4" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="ncocode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="UpdationDate" Type="smalldatetime" />
+    <Property Name="IP" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ehrmsupLocal.dbo.msubquali_29_Dec_2020' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="msubquali_29_Dec_2020">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="int" Nullable="false" />
+    <Property Name="subcode" Type="char" MaxLength="4" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="ncocode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Status" Type="char" MaxLength="1" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="UpdationDate" Type="smalldatetime" />
+    <Property Name="IP" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="pisawarddetail">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uniqid" Type="bigint" Nullable="false" />
+    <Property Name="dofaward" Type="smalldatetime" Nullable="false" />
+    <Property Name="awardtype" Type="char" MaxLength="1" />
+    <Property Name="awarddetail" Type="nvarchar" MaxLength="4000" />
+    <Property Name="updation_date" Type="smalldatetime" />
+    <Property Name="updated_by" Type="nvarchar" MaxLength="200" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="verify" Type="char" MaxLength="1" />
+    <Property Name="verified_by" Type="nchar" MaxLength="200" />
+    <Property Name="CIPAdress" Type="nvarchar" MaxLength="80" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="pisempaddress">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+    </Key>
+    <Property Name="transid" Type="bigint" />
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="preaddress" Type="nvarchar" MaxLength="4000" />
+    <Property Name="prestate" Type="char" MaxLength="2" />
+    <Property Name="predistt" Type="varchar" MaxLength="4" />
+    <Property Name="preblock" Type="varchar" MaxLength="10" />
+    <Property Name="pretown" Type="varchar" MaxLength="10" />
+    <Property Name="prepin" Type="char" MaxLength="6" />
+    <Property Name="prephone" Type="char" MaxLength="11" />
+    <Property Name="premobile" Type="char" MaxLength="10" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="prePoliceStation" Type="nvarchar" MaxLength="1200" />
+    <Property Name="preStreetNumber" Type="nvarchar" MaxLength="400" />
+    <Property Name="preMh_Vill" Type="nvarchar" MaxLength="1200" />
+    <Property Name="preHouseNumber" Type="nvarchar" MaxLength="1200" />
+    <Property Name="preWardNumber" Type="nvarchar" MaxLength="200" />
+    <Property Name="permaddr" Type="nvarchar" MaxLength="4000" />
+    <Property Name="permstate" Type="char" MaxLength="2" />
+    <Property Name="permdistt" Type="varchar" MaxLength="4" />
+    <Property Name="permblock" Type="varchar" MaxLength="10" />
+    <Property Name="permtown" Type="char" MaxLength="10" />
+    <Property Name="permpin" Type="char" MaxLength="10" />
+    <Property Name="permphone" Type="char" MaxLength="11" />
+    <Property Name="permobile" Type="char" MaxLength="10" />
+    <Property Name="peremail" Type="varchar" MaxLength="100" />
+    <Property Name="perPoliceStation" Type="nvarchar" MaxLength="1200" />
+    <Property Name="perStreetNumber" Type="nvarchar" MaxLength="400" />
+    <Property Name="perMh_Vill" Type="nvarchar" MaxLength="1200" />
+    <Property Name="perHouseNumber" Type="nvarchar" MaxLength="1200" />
+    <Property Name="perWardNumber" Type="nvarchar" MaxLength="200" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="200" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="200" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="pisempdepproceed">
+    <Key>
+      <PropertyRef Name="Stateid" />
+      <PropertyRef Name="deptprocid" />
+    </Key>
+    <Property Name="Stateid" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="deptprocid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transid" Type="bigint" />
+    <Property Name="deptid" Type="char" MaxLength="7" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" />
+    <Property Name="ChargeStatus" Type="char" MaxLength="3" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="200" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="200" />
+    <Property Name="MPDpenaltyimposed" Type="varchar" MaxLength="10" />
+    <Property Name="MPDorderno" Type="nvarchar" MaxLength="200" />
+    <Property Name="MPDdate" Type="smalldatetime" />
+    <Property Name="DPD_PDorderno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_PDorderdate" Type="smalldatetime" />
+    <Property Name="DPD_PIfinancialyear" Type="nvarchar" MaxLength="40" />
+    <Property Name="DPD_PIfromdate" Type="smalldatetime" />
+    <Property Name="DPD_PItodate" Type="smalldatetime" />
+    <Property Name="DPD_FDfileno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_DelinquentEPdept" Type="char" MaxLength="7" />
+    <Property Name="DPD_DelinquentEPoffice" Type="char" MaxLength="20" />
+    <Property Name="DPD_DelinquentEPdesig" Type="char" MaxLength="20" />
+    <Property Name="DPD_SReffdateofsus" Type="smalldatetime" />
+    <Property Name="DPD_SRsusordno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_SRsusdate" Type="smalldatetime" />
+    <Property Name="DPD_SReffdateofrev" Type="smalldatetime" />
+    <Property Name="DPD_SRrevordno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_SRrevdate" Type="smalldatetime" />
+    <Property Name="DPD_CSordno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_CSdate" Type="smalldatetime" />
+    <Property Name="DPD_CDappointmentdateofio" Type="smalldatetime" />
+    <Property Name="DPD_CDinqoffordno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_CDinqoffdate" Type="smalldatetime" />
+    <Property Name="DPD_CDinqoffgpfno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_CDinqoffname" Type="nvarchar" MaxLength="800" />
+    <Property Name="DPD_CDinqoffdept" Type="nvarchar" MaxLength="2000" />
+    <Property Name="DPD_CDinqoffdesig" Type="nvarchar" MaxLength="2000" />
+    <Property Name="DPD_CDappointmentdateofpo" Type="smalldatetime" />
+    <Property Name="DPD_CDpreoffordno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_CDpreoffdate" Type="smalldatetime" />
+    <Property Name="DPD_CDpreoffgpfno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_CDpreoffname" Type="nvarchar" MaxLength="800" />
+    <Property Name="DPD_CDpreoffdept" Type="nvarchar" MaxLength="2000" />
+    <Property Name="DPD_CDpreoffdesig" Type="nvarchar" MaxLength="2000" />
+    <Property Name="DPD_RDreplacementof" Type="char" MaxLength="5" />
+    <Property Name="DPD_RDnameofreplacedoff" Type="nvarchar" MaxLength="800" />
+    <Property Name="DPD_RDdeptofreplacedoff" Type="char" MaxLength="7" />
+    <Property Name="DPD_RDdesigofreplacedoff" Type="char" MaxLength="20" />
+    <Property Name="DPD_RDdateofappointment" Type="smalldatetime" />
+    <Property Name="DPD_RDgpfnoofreplofficer" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_RDnameofreplofficer" Type="nvarchar" MaxLength="800" />
+    <Property Name="DPD_RDdeptofreplofficer" Type="nvarchar" MaxLength="800" />
+    <Property Name="DPD_RDdesigofreplofficer" Type="nvarchar" MaxLength="800" />
+    <Property Name="DPD_RDordnoofrepl" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPD_RDorddateofrepl" Type="smalldatetime" />
+    <Property Name="DPD_RDremarksofrepl" Type="nvarchar" MaxLength="2000" />
+    <Property Name="DPS_CSIDcasestatus" Type="varchar" MaxLength="10" />
+    <Property Name="DPS_CSIDorderno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPS_CSIDdate" Type="smalldatetime" />
+    <Property Name="DPS_CSIDdisofpnlt" Type="varchar" MaxLength="10" />
+    <Property Name="DPS_CSIDpercentanddurationofpension" Type="nvarchar" MaxLength="800" />
+    <Property Name="DPS_AOappealbyofficer" Type="char" MaxLength="5" />
+    <Property Name="DPS_AOdept" Type="char" MaxLength="7" />
+    <Property Name="DPS_AOdesig" Type="char" MaxLength="20" />
+    <Property Name="DPS_AOoutcomeofapl" Type="varchar" MaxLength="10" />
+    <Property Name="DPS_AOordno" Type="nvarchar" MaxLength="200" />
+    <Property Name="DPS_AOdate" Type="smalldatetime" />
+    <Property Name="DPS_AOdisofpnlt" Type="varchar" MaxLength="10" />
+    <Property Name="DPS_AOpercentanddurationofpension" Type="nvarchar" MaxLength="800" />
+    <Property Name="CPD_CCDfirno" Type="nvarchar" MaxLength="200" />
+    <Property Name="CPD_CCDfirdate" Type="smalldatetime" />
+    <Property Name="CPD_CCDpolicevigcbi" Type="varchar" MaxLength="10" />
+    <Property Name="CPD_CCDpolicestationdistrict" Type="char" MaxLength="20" />
+    <Property Name="CPD_CCDnameofpolicestation" Type="nvarchar" MaxLength="800" />
+    <Property Name="CPD_CCDgrno" Type="nvarchar" MaxLength="200" />
+    <Property Name="CPD_CCDgrdate" Type="smalldatetime" />
+    <Property Name="CPD_PDprosecutionsanordno" Type="nvarchar" MaxLength="200" />
+    <Property Name="CPD_PDprosecutionsandate" Type="smalldatetime" />
+    <Property Name="CPD_PDdetailsoftrilcourt" Type="nvarchar" MaxLength="2400" />
+    <Property Name="CPChargeSheetDate" Type="smalldatetime" />
+    <Property Name="CPD_CDcognizance" Type="char" MaxLength="5" />
+    <Property Name="CPD_OCPoutcomeofcriminalproceeding" Type="char" MaxLength="5" />
+    <Property Name="CPD_OCPdetailsOfPunishment" Type="nvarchar" MaxLength="2000" />
+    <Property Name="LPCaseNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="LPCaseYear" Type="char" MaxLength="5" />
+    <Property Name="LPCaseStatus" Type="varchar" MaxLength="10" />
+    <Property Name="LPrecommendation" Type="nvarchar" MaxLength="2000" />
+    <Property Name="LPactiontknbydept" Type="nvarchar" MaxLength="800" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="pisempeducation">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="transid" Type="bigint" />
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uniqid" Type="bigint" Nullable="false" />
+    <Property Name="eduid" Type="bigint" Nullable="false" />
+    <Property Name="eduyear" Type="char" MaxLength="4" />
+    <Property Name="eduinst" Type="nvarchar" MaxLength="2000" />
+    <Property Name="edustream" Type="char" MaxLength="4" />
+    <Property Name="edumark" Type="bigint" />
+    <Property Name="edugrade" Type="char" MaxLength="1" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_by" Type="nvarchar" MaxLength="200" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="200" />
+    <Property Name="CIPAdress" Type="varchar" MaxLength="20" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="AttachmentExt" Type="varchar" MaxLength="10" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="4000" />
+    <Property Name="eduAcquringStatus" Type="char" MaxLength="1" />
+    <Property Name="RollNo_EnrolmentNo" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="pisempfamily">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="transid" Type="bigint" />
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uniqid" Type="bigint" Nullable="false" />
+    <Property Name="memname" Type="nvarchar" MaxLength="200" />
+    <Property Name="memrelation" Type="char" MaxLength="2" />
+    <Property Name="memdob" Type="smalldatetime" />
+    <Property Name="memdepend" Type="char" MaxLength="1" />
+    <Property Name="memempstcent" Type="char" MaxLength="1" />
+    <Property Name="memempiph" Type="char" MaxLength="1" />
+    <Property Name="memdepname" Type="nvarchar" MaxLength="400" />
+    <Property Name="memiphempcd" Type="nvarchar" MaxLength="20" />
+    <Property Name="memesalarycd" Type="nvarchar" MaxLength="20" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="CIPAdress" Type="varchar" MaxLength="20" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="MemberUIdNo" Type="char" MaxLength="12" />
+    <Property Name="memberEdu" Type="char" MaxLength="10" />
+    <Property Name="ActiveStatus" Type="char" MaxLength="1" />
+    <Property Name="InActiveReason" Type="char" MaxLength="2" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="AttachmentExt" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="pisemphistory">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="transid" Type="bigint" />
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uniqid" Type="bigint" Nullable="false" />
+    <Property Name="transtype" Type="char" MaxLength="2" />
+    <Property Name="orderno" Type="nvarchar" MaxLength="200" />
+    <Property Name="orderdt" Type="smalldatetime" Nullable="false" />
+    <Property Name="StateCodeFrom" Type="char" MaxLength="2" />
+    <Property Name="StateCodeTo" Type="char" MaxLength="2" />
+    <Property Name="DeptIDFrom" Type="char" MaxLength="7" />
+    <Property Name="NewdeptID" Type="char" MaxLength="7" />
+    <Property Name="NewDeptNameFrom" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NewDeptNameTo" Type="nvarchar" MaxLength="1000" />
+    <Property Name="OfficeID" Type="varchar" MaxLength="12" />
+    <Property Name="newofficeid" Type="varchar" MaxLength="12" />
+    <Property Name="NewOfficeNameFrom" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NewOfficeNameTo" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DesignationID" Type="varchar" MaxLength="10" />
+    <Property Name="newdesigcd" Type="varchar" MaxLength="10" />
+    <Property Name="NewDesignationNameFrom" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NewDesignationNameTo" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NewJoiningDate" Type="smalldatetime" />
+    <Property Name="areatype" Type="char" MaxLength="1" />
+    <Property Name="newclass" Type="char" MaxLength="1" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="4000" />
+    <Property Name="IsAdditionalCharge" Type="char" MaxLength="1" />
+    <Property Name="PayCommissionMasterID" Type="int" />
+    <Property Name="PayScaleMasterID" Type="int" />
+    <Property Name="PayBandMasterID" Type="int" />
+    <Property Name="GradePayMasterID" Type="int" />
+    <Property Name="baspay" Type="varchar" MaxLength="20" />
+    <Property Name="FromBasicPay" Type="varchar" MaxLength="15" />
+    <Property Name="FromPayCommissionString" Type="varchar" MaxLength="1000" />
+    <Property Name="FinancialBeneficialDate" Type="smalldatetime" />
+    <Property Name="PayScaleDate" Type="smalldatetime" />
+    <Property Name="IsReal" Type="char" MaxLength="1" />
+    <Property Name="IsNotional" Type="char" MaxLength="1" />
+    <Property Name="ServiceCode" Type="int" />
+    <Property Name="ServiceGradingCode" Type="int" />
+    <Property Name="FromDate" Type="smalldatetime" />
+    <Property Name="ToDate" Type="smalldatetime" />
+    <Property Name="depuoffice" Type="varchar" MaxLength="200" />
+    <Property Name="incredt" Type="datetime" />
+    <Property Name="payscale" Type="char" MaxLength="100" />
+    <Property Name="TransDeptID" Type="nvarchar" MaxLength="14" />
+    <Property Name="Branchcd" Type="int" />
+    <Property Name="BranchCodeFrom" Type="int" />
+    <Property Name="Cadre" Type="int" />
+    <Property Name="estabdeptid" Type="char" MaxLength="7" />
+    <Property Name="estabofficeid" Type="char" MaxLength="12" />
+    <Property Name="dofrelieve" Type="smalldatetime" />
+    <Property Name="linkeduniqueid" Type="bigint" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="AttachmentExt" Type="varchar" MaxLength="10" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Verify" Type="nvarchar" MaxLength="2" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="dofvalid" Type="datetime" />
+    <Property Name="IpAddress" Type="nvarchar" MaxLength="40" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="FromBranchName" Type="nvarchar" MaxLength="400" />
+    <Property Name="TobranchName" Type="nvarchar" MaxLength="400" />
+    <Property Name="ToBranchCode" Type="int" />
+    <Property Name="TransactionDate" Type="smalldatetime" />
+    <Property Name="fromSubdesig" Type="char" MaxLength="4" />
+    <Property Name="toSubdesig" Type="char" MaxLength="4" />
+    <Property Name="fromSubdesig_OLD" Type="char" MaxLength="4" />
+    <Property Name="toSubdesig_OLD" Type="char" MaxLength="4" />
+    <Property Name="fromServiceCd" Type="int" />
+    <Property Name="fromGradingcd" Type="int" />
+  </EntityType>
+  <EntityType Name="pisempjoinrelievedetail">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="joinid" />
+    </Key>
+    <Property Name="StateID" Type="tinyint" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="joinid" Type="int" Nullable="false" />
+    <Property Name="joindeptid" Type="char" MaxLength="7" />
+    <Property Name="joinofficeid" Type="bigint" />
+    <Property Name="joinreason" Type="int" />
+    <Property Name="joinonAForFN" Type="char" MaxLength="1" />
+    <Property Name="joindt" Type="smalldatetime" />
+    <Property Name="joinordernodt" Type="nvarchar" MaxLength="200" />
+    <Property Name="joinorderdt" Type="smalldatetime" />
+    <Property Name="joindesig" Type="varchar" MaxLength="10" />
+    <Property Name="joinSubDesig" Type="varchar" MaxLength="10" />
+    <Property Name="joinDeptName" Type="nvarchar" MaxLength="300" />
+    <Property Name="joinOfficeStateId" Type="tinyint" />
+    <Property Name="joinOfficeDistcd" Type="smallint" />
+    <Property Name="joinOfficeName" Type="nvarchar" MaxLength="100" />
+    <Property Name="joinDesigName" Type="nvarchar" MaxLength="100" />
+    <Property Name="areaasTribalhardsub" Type="char" MaxLength="1" />
+    <Property Name="whetherhomedist" Type="char" MaxLength="1" />
+    <Property Name="joinbranch" Type="int" />
+    <Property Name="joincadre" Type="int" />
+    <Property Name="joinclass" Type="char" MaxLength="1" />
+    <Property Name="JoinServiceCd" Type="varchar" MaxLength="4" />
+    <Property Name="JoinServiceGrading" Type="varchar" MaxLength="4" />
+    <Property Name="joinremarks" Type="nvarchar" MaxLength="200" />
+    <Property Name="joinemptype" Type="char" MaxLength="2" />
+    <Property Name="joingazngaz" Type="char" MaxLength="1" />
+    <Property Name="joinverify" Type="char" MaxLength="1" />
+    <Property Name="J_OrderPDF" Type="image" />
+    <Property Name="relieveid" Type="int" />
+    <Property Name="relievedt" Type="smalldatetime" />
+    <Property Name="relieveaffn" Type="char" MaxLength="1" />
+    <Property Name="relievetranferorderno" Type="nvarchar" MaxLength="200" />
+    <Property Name="relievetranferorderdt" Type="smalldatetime" />
+    <Property Name="relievedeptid" Type="char" MaxLength="7" />
+    <Property Name="relieveofficeid" Type="varchar" MaxLength="20" />
+    <Property Name="relievedesig" Type="varchar" MaxLength="10" />
+    <Property Name="relievesubdesig" Type="varchar" MaxLength="10" />
+    <Property Name="relievebranch" Type="int" />
+    <Property Name="relieveremark" Type="nvarchar" MaxLength="200" />
+    <Property Name="relieveestabdeptid" Type="char" MaxLength="7" />
+    <Property Name="relieveestabofficeid" Type="char" MaxLength="12" />
+    <Property Name="relievefordesig" Type="int" />
+    <Property Name="relieveforsubdesig" Type="int" />
+    <Property Name="relieveestabDeptName" Type="nvarchar" MaxLength="300" />
+    <Property Name="relieveestabOfficeStateId" Type="tinyint" />
+    <Property Name="relieveestabOfficeDistcd" Type="smallint" />
+    <Property Name="relieveestabOfficeName" Type="nvarchar" MaxLength="100" />
+    <Property Name="relieveDesigName" Type="nvarchar" MaxLength="100" />
+    <Property Name="updatedby" Type="varchar" MaxLength="50" />
+    <Property Name="updateondate" Type="smalldatetime" />
+    <Property Name="relieveupdateby" Type="varchar" MaxLength="50" />
+    <Property Name="relieveupdateondate" Type="smalldatetime" />
+    <Property Name="IsAdditionalCharge" Type="char" MaxLength="1" />
+    <Property Name="relieveVerify" Type="char" MaxLength="1" />
+    <Property Name="R_OrderPDF" Type="image" />
+    <Property Name="EntryStatus" Type="char" MaxLength="1" />
+    <Property Name="REntryStatus" Type="char" MaxLength="1" />
+    <Property Name="IsOnlineJoin" Type="char" MaxLength="1" />
+    <Property Name="IsJoinOrderOnline" Type="char" MaxLength="1" />
+    <Property Name="IsOnlineRelieve" Type="char" MaxLength="1" />
+    <Property Name="IsRelieveOrderOnline" Type="char" MaxLength="1" />
+    <Property Name="IsJoinPublished" Type="char" MaxLength="1" />
+    <Property Name="IsRelievedPublished" Type="char" MaxLength="1" />
+    <Property Name="JoinCopyTo" Type="nvarchar" MaxLength="100" />
+    <Property Name="JoinOrderBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="RelieveCopyTo" Type="nvarchar" MaxLength="100" />
+    <Property Name="RelieveOrderBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="IpAddress" Type="varchar" MaxLength="20" />
+    <Property Name="entitledJoinTime" Type="char" MaxLength="1" />
+    <Property Name="entitledJoinNoOfDays" Type="char" MaxLength="3" />
+    <Property Name="AvailedNoOfDays" Type="char" MaxLength="3" />
+    <Property Name="NotAvailedNoOfDays" Type="char" MaxLength="3" />
+    <Property Name="ReleivDesigid" Type="bigint" />
+    <Property Name="ReleivOfficerid" Type="bigint" />
+    <Property Name="SignDesigid" Type="bigint" />
+    <Property Name="SignOfficerid" Type="bigint" />
+    <Property Name="Authority_Deptid" Type="nvarchar" MaxLength="300" />
+    <Property Name="Authority_Code" Type="nvarchar" MaxLength="1000" />
+    <Property Name="JoinDesigid" Type="bigint" />
+    <Property Name="JoinOfficerid" Type="bigint" />
+    <Property Name="JoinSignDesigid" Type="bigint" />
+    <Property Name="JoinSignOfficerid" Type="bigint" />
+  </EntityType>
+  <EntityType Name="pisempleave">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uniqid" Type="bigint" Nullable="false" />
+    <Property Name="leavetype" Type="char" MaxLength="2" />
+    <Property Name="fromdt" Type="smalldatetime" Nullable="false" />
+    <Property Name="todt" Type="smalldatetime" Nullable="false" />
+    <Property Name="reason" Type="varchar" MaxLength="500" />
+    <Property Name="ltcavail" Type="char" MaxLength="1" />
+    <Property Name="stationleave" Type="char" MaxLength="1" />
+    <Property Name="sanctofficer" Type="char" MaxLength="2" />
+    <Property Name="leavest" Type="char" MaxLength="1" />
+    <Property Name="leavbal" Type="bigint" />
+    <Property Name="leamlbal" Type="bigint" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="CIPAdress" Type="nvarchar" MaxLength="40" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="totalNoOfDays" Type="decimal" Precision="7" Scale="2" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="AttachmentExt" Type="varchar" MaxLength="10" />
+    <Property Name="LeaveNumerator" Type="char" MaxLength="2" />
+    <Property Name="LeaveDenominator" Type="char" MaxLength="2" />
+    <Property Name="LeaveTransBalance" Type="varchar" MaxLength="10" />
+    <Property Name="LeaveTransBalance_Numerator" Type="varchar" MaxLength="5" />
+    <Property Name="LeaveTransBalance_Denominator" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="pisempnominee">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="transid" Type="bigint" />
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uniqid" Type="bigint" Nullable="false" />
+    <Property Name="nomtype" Type="char" MaxLength="1" />
+    <Property Name="nomname" Type="nvarchar" MaxLength="200" />
+    <Property Name="nomrelation" Type="char" MaxLength="2" />
+    <Property Name="nom_dob" Type="varchar" MaxLength="200" />
+    <Property Name="nompercen" Type="decimal" Precision="7" Scale="2" />
+    <Property Name="UID_No" Type="varchar" MaxLength="20" />
+    <Property Name="nom_bnkAcNo" Type="varchar" MaxLength="20" />
+    <Property Name="nom_BankName" Type="nvarchar" MaxLength="400" />
+    <Property Name="nom_BranchName" Type="nvarchar" MaxLength="400" />
+    <Property Name="nom_IFSCCode" Type="nvarchar" MaxLength="40" />
+    <Property Name="nom_minorstatus" Type="varchar" MaxLength="50" />
+    <Property Name="nom_guardianDetail" Type="varchar" MaxLength="500" />
+    <Property Name="nomaddress" Type="nvarchar" MaxLength="2000" />
+    <Property Name="nomstreetNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="nomMh_Vill" Type="nvarchar" MaxLength="600" />
+    <Property Name="nomHouseNo" Type="nvarchar" MaxLength="600" />
+    <Property Name="nomWardNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="nomst" Type="char" MaxLength="2" />
+    <Property Name="nomdist" Type="char" MaxLength="4" />
+    <Property Name="nomblk" Type="varchar" MaxLength="10" />
+    <Property Name="nomtown" Type="varchar" MaxLength="10" />
+    <Property Name="nomPoliceStation" Type="nvarchar" MaxLength="600" />
+    <Property Name="nompincd" Type="char" MaxLength="6" />
+    <Property Name="nommobileno" Type="char" MaxLength="12" />
+    <Property Name="nomEmail" Type="varchar" MaxLength="100" />
+    <Property Name="nomphone" Type="char" MaxLength="11" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="CIPAdress" Type="char" MaxLength="20" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="4000" />
+    <Property Name="main_Alt_Nominee" Type="char" MaxLength="1" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="AttachmentExt" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="pisempprofessional">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+    </Key>
+    <Property Name="transid" Type="varchar" MaxLength="50" />
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="InitialJoiningState" Type="char" MaxLength="2" />
+    <Property Name="InitialJoiningdeptid" Type="char" MaxLength="7" />
+    <Property Name="officeid" Type="varchar" MaxLength="12" />
+    <Property Name="appdate" Type="smalldatetime" />
+    <Property Name="apporder" Type="nvarchar" MaxLength="400" />
+    <Property Name="iphjoindt" Type="smalldatetime" />
+    <Property Name="iphdesg" Type="varchar" MaxLength="10" />
+    <Property Name="iphclass" Type="char" MaxLength="1" />
+    <Property Name="gpfcpftype" Type="char" MaxLength="1" />
+    <Property Name="gpfcpfnumb" Type="nvarchar" MaxLength="40" />
+    <Property Name="gisnumb" Type="char" MaxLength="1" />
+    <Property Name="dofretire" Type="smalldatetime" />
+    <Property Name="dofdeath" Type="smalldatetime" />
+    <Property Name="modeofrec" Type="char" MaxLength="2" />
+    <Property Name="oldhistory" Type="char" MaxLength="1" />
+    <Property Name="esalarycd" Type="varchar" MaxLength="15" />
+    <Property Name="gazzeted" Type="char" MaxLength="1" />
+    <Property Name="emptype" Type="char" MaxLength="2" />
+    <Property Name="initbaspay" Type="varchar" MaxLength="50" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="cadre_cd" Type="int" />
+    <Property Name="seniorityyear" Type="char" MaxLength="4" />
+    <Property Name="seniorityno" Type="char" MaxLength="20" />
+    <Property Name="seniorityDivision" Type="nvarchar" MaxLength="10" />
+    <Property Name="CIPAdress" Type="nvarchar" MaxLength="40" />
+    <Property Name="PayCommssion" Type="int" />
+    <Property Name="PayScale" Type="int" />
+    <Property Name="PayBand" Type="int" />
+    <Property Name="GradePay" Type="int" />
+    <Property Name="ServiceCd" Type="int" />
+    <Property Name="GradingCd" Type="int" />
+    <Property Name="AppointmentCd" Type="int" />
+    <Property Name="AppointingAuthority" Type="nvarchar" MaxLength="200" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="200" />
+    <Property Name="DeptName" Type="nvarchar" MaxLength="400" />
+    <Property Name="OfficeName" Type="nvarchar" MaxLength="400" />
+    <Property Name="DesigName" Type="nvarchar" MaxLength="200" />
+    <Property Name="StateCadre" Type="char" MaxLength="2" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="apporderdate" Type="smalldatetime" />
+    <Property Name="appconfirmorderdate" Type="smalldatetime" />
+    <Property Name="appconfrmorder" Type="nvarchar" MaxLength="400" />
+    <Property Name="appconfrmdate" Type="smalldatetime" />
+    <Property Name="ConfrmGovt" Type="char" MaxLength="1" />
+    <Property Name="GisNumDetail" Type="nvarchar" MaxLength="40" />
+    <Property Name="ServiceRegularisationDate" Type="smalldatetime" />
+    <Property Name="SubDesigId" Type="char" MaxLength="4" />
+    <Property Name="SubDesigName" Type="nvarchar" MaxLength="200" />
+    <Property Name="joiningStatus" Type="char" MaxLength="1" />
+    <Property Name="OfficeStateId" Type="tinyint" />
+    <Property Name="OfficeDistcd" Type="int" />
+  </EntityType>
+  <EntityType Name="pisemptraining">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="transid" Type="bigint" />
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uniqid" Type="bigint" Nullable="false" />
+    <Property Name="trngtype" Type="char" MaxLength="2" />
+    <Property Name="trngtopic" Type="nvarchar" MaxLength="2000" />
+    <Property Name="trnginstitute" Type="nvarchar" MaxLength="2000" />
+    <Property Name="trngsponsor" Type="nvarchar" MaxLength="2000" />
+    <Property Name="trngdtfrom" Type="smalldatetime" />
+    <Property Name="trngdtto" Type="smalldatetime" />
+    <Property Name="trnpalce" Type="char" MaxLength="1" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="CIPAdress" Type="varchar" MaxLength="50" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="pisloandetail">
+    <Key>
+      <PropertyRef Name="StateID" />
+      <PropertyRef Name="deptid" />
+      <PropertyRef Name="empcd" />
+      <PropertyRef Name="uniqid" />
+    </Key>
+    <Property Name="StateID" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uniqid" Type="bigint" Nullable="false" />
+    <Property Name="loantype" Type="char" MaxLength="1" />
+    <Property Name="loanactno" Type="nvarchar" MaxLength="200" />
+    <Property Name="letterno" Type="nvarchar" MaxLength="400" />
+    <Property Name="sancdate" Type="datetime" />
+    <Property Name="sancamount" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="retdate" Type="datetime" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Updation_Date" Type="smalldatetime" />
+    <Property Name="Updated_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="Verify" Type="char" MaxLength="1" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="Verified_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="CIPAdress" Type="nvarchar" MaxLength="100" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ehrmsupLocal.dbo.pistransferemplist' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="pistransferemplist">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="listid" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="deptid" Type="char" MaxLength="7" />
+    <Property Name="listid" Type="bigint" Nullable="false" />
+    <Property Name="empcd" Type="varchar" MaxLength="20" />
+    <Property Name="trandeptid" Type="char" MaxLength="7" />
+    <Property Name="trnofficeid" Type="varchar" MaxLength="20" />
+    <Property Name="trnbranchcd" Type="varchar" MaxLength="10" />
+    <Property Name="trntodesig" Type="varchar" MaxLength="10" />
+    <Property Name="trntosubdesig" Type="varchar" MaxLength="10" />
+    <Property Name="trnfromDept" Type="char" MaxLength="7" />
+    <Property Name="trnfromoff" Type="varchar" MaxLength="20" />
+    <Property Name="trnfrombranchcd" Type="varchar" MaxLength="10" />
+    <Property Name="trnfromdesig" Type="varchar" MaxLength="10" />
+    <Property Name="trnfromsubdesig" Type="varchar" MaxLength="10" />
+    <Property Name="dofvalid" Type="smalldatetime" />
+    <Property Name="trnremarks" Type="nvarchar" MaxLength="4000" />
+    <Property Name="useridde" Type="varchar" MaxLength="20" />
+    <Property Name="dofentry" Type="smalldatetime" />
+    <Property Name="useridvalid" Type="char" MaxLength="5" />
+    <Property Name="joindt" Type="smalldatetime" />
+    <Property Name="relievedt" Type="smalldatetime" />
+    <Property Name="canceldt" Type="smalldatetime" />
+    <Property Name="prevjoindt" Type="smalldatetime" />
+    <Property Name="prevsenno" Type="nvarchar" MaxLength="100" />
+    <Property Name="vipnotedetail" Type="nvarchar" MaxLength="4000" />
+    <Property Name="cmrefno" Type="nvarchar" MaxLength="200" />
+    <Property Name="withtta" Type="char" MaxLength="1" />
+    <Property Name="withjointime" Type="char" MaxLength="1" />
+    <Property Name="PayCommision" Type="varchar" MaxLength="10" />
+    <Property Name="PayScale" Type="varchar" MaxLength="10" />
+    <Property Name="PayBand" Type="varchar" MaxLength="10" />
+    <Property Name="GradePay" Type="varchar" MaxLength="10" />
+    <Property Name="BasicPay" Type="varchar" MaxLength="10" />
+    <Property Name="IncrementDate" Type="smalldatetime" />
+    <Property Name="EmpEstDept" Type="varchar" MaxLength="7" />
+    <Property Name="EmpEstOffice" Type="varchar" MaxLength="20" />
+    <Property Name="EmpJoinEstDept" Type="varchar" MaxLength="7" />
+    <Property Name="EmpJoinEstOffice" Type="varchar" MaxLength="20" />
+    <Property Name="JoinId" Type="varchar" MaxLength="20" />
+    <Property Name="ReleiveId" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="pistransferlist">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="listid" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="listid" Type="bigint" Nullable="false" />
+    <Property Name="listnm" Type="nvarchar" MaxLength="4000" />
+    <Property Name="userofficeid" Type="varchar" MaxLength="20" />
+    <Property Name="year" Type="char" MaxLength="4" />
+    <Property Name="orderno" Type="bigint" />
+    <Property Name="orderdt" Type="smalldatetime" />
+    <Property Name="Listtitle" Type="nvarchar" MaxLength="4000" />
+    <Property Name="updation_Date" Type="smalldatetime" />
+    <Property Name="updated_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="verified" Type="nvarchar" MaxLength="2" />
+    <Property Name="verification_Date" Type="smalldatetime" />
+    <Property Name="verified_By" Type="nvarchar" MaxLength="100" />
+    <Property Name="deptid" Type="char" MaxLength="7" />
+    <Property Name="trfprom" Type="int" />
+    <Property Name="copytotxt" Type="nvarchar" MaxLength="4000" />
+    <Property Name="authority_code" Type="int" />
+    <Property Name="filenumber" Type="nvarchar" MaxLength="4000" />
+    <Property Name="txtattop" Type="nvarchar" MaxLength="4000" />
+    <Property Name="txtatmiddle" Type="nvarchar" MaxLength="4000" />
+    <Property Name="authorisedpmiscd_sign" Type="int" />
+    <Property Name="authorisedpmis_name" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="pistransferorderauthority">
+    <Key>
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="Deptid" />
+      <PropertyRef Name="Authority_code" />
+    </Key>
+    <Property Name="StateId" Type="int" Nullable="false" />
+    <Property Name="Deptid" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="Authority_code" Type="int" Nullable="false" />
+    <Property Name="Authority_desc" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Authority_desc_local" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Authority_address" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Authority_address_local" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DeUserId" Type="varchar" MaxLength="50" />
+    <Property Name="Dedate" Type="smalldatetime" />
+    <Property Name="IpAdress" Type="nvarchar" MaxLength="40" />
+    <Property Name="LockedStatus" Type="char" MaxLength="1" />
+    <Property Name="dis_code" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ehrmsupLocal.dbo.PromotionDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PromotionDetails">
+    <Key>
+      <PropertyRef Name="pID" />
+    </Key>
+    <Property Name="pID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="deptid" Type="varchar" MaxLength="7" />
+    <Property Name="empcd" Type="bigint" />
+    <Property Name="OrderNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="PromotionDate" Type="datetime" />
+    <Property Name="HeadDeptID" Type="smallint" />
+    <Property Name="pdeptid" Type="varchar" MaxLength="7" />
+    <Property Name="State" Type="smallint" />
+    <Property Name="distcd" Type="int" />
+    <Property Name="officeid" Type="bigint" />
+    <Property Name="ServiceCd" Type="int" />
+    <Property Name="GradingCd" Type="int" />
+    <Property Name="desigcode" Type="bigint" />
+    <Property Name="subdesigcode" Type="bigint" />
+    <Property Name="remark" Type="nvarchar" MaxLength="100" />
+    <Property Name="PayCommision" Type="int" />
+    <Property Name="PayScale" Type="int" />
+    <Property Name="PayBand" Type="int" />
+    <Property Name="GradePay" Type="int" />
+    <Property Name="PayScaleDate" Type="datetime" />
+    <Property Name="postingDept" Type="varchar" MaxLength="7" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="20" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedIP" Type="varchar" MaxLength="20" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="20" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="UpdatedIP" Type="varchar" MaxLength="20" />
+    <Property Name="To_Verify" Type="varchar" MaxLength="50" />
+    <Property Name="To_VerifyDate" Type="datetime" />
+    <Property Name="Verified_By" Type="varchar" MaxLength="50" />
+    <Property Name="Verified_ByDate" Type="datetime" />
+    <Property Name="VerifyGroupId" Type="bigint" />
+    <Property Name="Verify" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityContainer Name="ehrmsupLocalModelStoreContainer">
+    <EntitySet Name="EmpLeaveHistory" EntityType="Self.EmpLeaveHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="emppersonal" EntityType="Self.emppersonal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mAwardDetail" EntityType="Self.mAwardDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mBloodGroup" EntityType="Self.mBloodGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mBloodGroupMaster" EntityType="Self.mBloodGroupMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mbranchMaster" EntityType="Self.mbranchMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mCategoryMaster" EntityType="Self.mCategoryMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mClassMaster" EntityType="Self.mClassMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mdeptmaster" EntityType="Self.mdeptmaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mdesigmast" EntityType="Self.mdesigmast" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mFWblkmas" EntityType="Self.mFWblkmas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mFWdismas" EntityType="Self.mFWdismas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mFWpanmas" EntityType="Self.mFWpanmas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mLeaveTypes" EntityType="Self.mLeaveTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mLoanType" EntityType="Self.mLoanType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mMaritalStatus" EntityType="Self.mMaritalStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mMaritalStatusMaster" EntityType="Self.mMaritalStatusMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mOfficeLevel" EntityType="Self.mOfficeLevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mofficemaster" EntityType="Self.mofficemaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mofficemasterForReports" EntityType="Self.mofficemasterForReports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mOfficeType" EntityType="Self.mOfficeType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mOrderType" EntityType="Self.mOrderType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mpiscadremast" EntityType="Self.mpiscadremast" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mpisemptype" EntityType="Self.mpisemptype" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mquali" EntityType="Self.mquali" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mquali_29_Dec_2020" EntityType="Self.mquali_29_Dec_2020" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mqualilevel" EntityType="Self.mqualilevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mRelationMaster" EntityType="Self.mRelationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mReligionTypeMaster" EntityType="Self.mReligionTypeMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mState" EntityType="Self.mState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mstatemaster" EntityType="Self.mstatemaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStateServiceGradingMaster" EntityType="Self.mStateServiceGradingMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStateServiceMaster" EntityType="Self.mStateServiceMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mSubCategoryMaster" EntityType="Self.mSubCategoryMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisawarddetail" EntityType="Self.pisawarddetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisempaddress" EntityType="Self.pisempaddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisempdepproceed" EntityType="Self.pisempdepproceed" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisempeducation" EntityType="Self.pisempeducation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisempfamily" EntityType="Self.pisempfamily" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisemphistory" EntityType="Self.pisemphistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisempjoinrelievedetail" EntityType="Self.pisempjoinrelievedetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisempleave" EntityType="Self.pisempleave" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisempnominee" EntityType="Self.pisempnominee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisempprofessional" EntityType="Self.pisempprofessional" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisemptraining" EntityType="Self.pisemptraining" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pisloandetail" EntityType="Self.pisloandetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pistransferlist" EntityType="Self.pistransferlist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pistransferorderauthority" EntityType="Self.pistransferorderauthority" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="msubquali" EntityType="Self.msubquali" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [msubquali].[code] AS [code], 
+    [msubquali].[subcode] AS [subcode], 
+    [msubquali].[name] AS [name], 
+    [msubquali].[ncocode] AS [ncocode], 
+    [msubquali].[Status] AS [Status], 
+    [msubquali].[UpdatedBy] AS [UpdatedBy], 
+    [msubquali].[UpdationDate] AS [UpdationDate], 
+    [msubquali].[IP] AS [IP]
+    FROM [dbo].[msubquali] AS [msubquali]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="msubquali_29_Dec_2020" EntityType="Self.msubquali_29_Dec_2020" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [msubquali_29_Dec_2020].[code] AS [code], 
+    [msubquali_29_Dec_2020].[subcode] AS [subcode], 
+    [msubquali_29_Dec_2020].[name] AS [name], 
+    [msubquali_29_Dec_2020].[ncocode] AS [ncocode], 
+    [msubquali_29_Dec_2020].[Status] AS [Status], 
+    [msubquali_29_Dec_2020].[UpdatedBy] AS [UpdatedBy], 
+    [msubquali_29_Dec_2020].[UpdationDate] AS [UpdationDate], 
+    [msubquali_29_Dec_2020].[IP] AS [IP]
+    FROM [dbo].[msubquali_29_Dec_2020] AS [msubquali_29_Dec_2020]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="pistransferemplist" EntityType="Self.pistransferemplist" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [pistransferemplist].[StateId] AS [StateId], 
+    [pistransferemplist].[deptid] AS [deptid], 
+    [pistransferemplist].[listid] AS [listid], 
+    [pistransferemplist].[empcd] AS [empcd], 
+    [pistransferemplist].[trandeptid] AS [trandeptid], 
+    [pistransferemplist].[trnofficeid] AS [trnofficeid], 
+    [pistransferemplist].[trnbranchcd] AS [trnbranchcd], 
+    [pistransferemplist].[trntodesig] AS [trntodesig], 
+    [pistransferemplist].[trntosubdesig] AS [trntosubdesig], 
+    [pistransferemplist].[trnfromDept] AS [trnfromDept], 
+    [pistransferemplist].[trnfromoff] AS [trnfromoff], 
+    [pistransferemplist].[trnfrombranchcd] AS [trnfrombranchcd], 
+    [pistransferemplist].[trnfromdesig] AS [trnfromdesig], 
+    [pistransferemplist].[trnfromsubdesig] AS [trnfromsubdesig], 
+    [pistransferemplist].[dofvalid] AS [dofvalid], 
+    [pistransferemplist].[trnremarks] AS [trnremarks], 
+    [pistransferemplist].[useridde] AS [useridde], 
+    [pistransferemplist].[dofentry] AS [dofentry], 
+    [pistransferemplist].[useridvalid] AS [useridvalid], 
+    [pistransferemplist].[joindt] AS [joindt], 
+    [pistransferemplist].[relievedt] AS [relievedt], 
+    [pistransferemplist].[canceldt] AS [canceldt], 
+    [pistransferemplist].[prevjoindt] AS [prevjoindt], 
+    [pistransferemplist].[prevsenno] AS [prevsenno], 
+    [pistransferemplist].[vipnotedetail] AS [vipnotedetail], 
+    [pistransferemplist].[cmrefno] AS [cmrefno], 
+    [pistransferemplist].[withtta] AS [withtta], 
+    [pistransferemplist].[withjointime] AS [withjointime], 
+    [pistransferemplist].[PayCommision] AS [PayCommision], 
+    [pistransferemplist].[PayScale] AS [PayScale], 
+    [pistransferemplist].[PayBand] AS [PayBand], 
+    [pistransferemplist].[GradePay] AS [GradePay], 
+    [pistransferemplist].[BasicPay] AS [BasicPay], 
+    [pistransferemplist].[IncrementDate] AS [IncrementDate], 
+    [pistransferemplist].[EmpEstDept] AS [EmpEstDept], 
+    [pistransferemplist].[EmpEstOffice] AS [EmpEstOffice], 
+    [pistransferemplist].[EmpJoinEstDept] AS [EmpJoinEstDept], 
+    [pistransferemplist].[EmpJoinEstOffice] AS [EmpJoinEstOffice], 
+    [pistransferemplist].[JoinId] AS [JoinId], 
+    [pistransferemplist].[ReleiveId] AS [ReleiveId]
+    FROM [dbo].[pistransferemplist] AS [pistransferemplist]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PromotionDetails" EntityType="Self.PromotionDetails" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PromotionDetails].[pID] AS [pID], 
+    [PromotionDetails].[deptid] AS [deptid], 
+    [PromotionDetails].[empcd] AS [empcd], 
+    [PromotionDetails].[OrderNo] AS [OrderNo], 
+    [PromotionDetails].[OrderDate] AS [OrderDate], 
+    [PromotionDetails].[PromotionDate] AS [PromotionDate], 
+    [PromotionDetails].[HeadDeptID] AS [HeadDeptID], 
+    [PromotionDetails].[pdeptid] AS [pdeptid], 
+    [PromotionDetails].[State] AS [State], 
+    [PromotionDetails].[distcd] AS [distcd], 
+    [PromotionDetails].[officeid] AS [officeid], 
+    [PromotionDetails].[ServiceCd] AS [ServiceCd], 
+    [PromotionDetails].[GradingCd] AS [GradingCd], 
+    [PromotionDetails].[desigcode] AS [desigcode], 
+    [PromotionDetails].[subdesigcode] AS [subdesigcode], 
+    [PromotionDetails].[remark] AS [remark], 
+    [PromotionDetails].[PayCommision] AS [PayCommision], 
+    [PromotionDetails].[PayScale] AS [PayScale], 
+    [PromotionDetails].[PayBand] AS [PayBand], 
+    [PromotionDetails].[GradePay] AS [GradePay], 
+    [PromotionDetails].[PayScaleDate] AS [PayScaleDate], 
+    [PromotionDetails].[postingDept] AS [postingDept], 
+    [PromotionDetails].[CreatedBy] AS [CreatedBy], 
+    [PromotionDetails].[CreatedDate] AS [CreatedDate], 
+    [PromotionDetails].[CreatedIP] AS [CreatedIP], 
+    [PromotionDetails].[UpdatedBy] AS [UpdatedBy], 
+    [PromotionDetails].[UpdatedDate] AS [UpdatedDate], 
+    [PromotionDetails].[UpdatedIP] AS [UpdatedIP], 
+    [PromotionDetails].[To_Verify] AS [To_Verify], 
+    [PromotionDetails].[To_VerifyDate] AS [To_VerifyDate], 
+    [PromotionDetails].[Verified_By] AS [Verified_By], 
+    [PromotionDetails].[Verified_ByDate] AS [Verified_ByDate], 
+    [PromotionDetails].[VerifyGroupId] AS [VerifyGroupId], 
+    [PromotionDetails].[Verify] AS [Verify]
+    FROM [dbo].[PromotionDetails] AS [PromotionDetails]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
